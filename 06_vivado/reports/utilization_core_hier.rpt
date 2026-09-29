@@ -1,0 +1,78 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Sep 28 02:35:34 2026
+| Host         : Gaurav running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -cells [get_cells system_i/yolo_accel/inst/u_core] -file D:/MPSOC_YOLO/06_vivado/reports/utilization_core_hier.rpt
+| Design       : system_wrapper
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+|       Instance      |           Module           | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | URAM | DSP Blocks |
++---------------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+| u_core              |                 yolo_accel |      54653 |      54584 |      64 |    5 | 21279 |     96 |      1 |    0 |         37 |
+|   u_core            |                 yolo_accel |      54653 |      54584 |      64 |    5 | 21279 |     96 |      1 |    0 |         37 |
+|     (u_core)        |                 yolo_accel |        184 |        184 |       0 |    0 |   872 |      0 |      0 |    0 |          0 |
+|     u_eng           |                conv_engine |      52611 |      52606 |       0 |    5 | 18956 |     92 |      1 |    0 |         33 |
+|       (u_eng)       |                conv_engine |        577 |        573 |       0 |    4 |  4638 |      0 |      0 |    0 |          1 |
+|       g_wb[0].u_wb  |    sdp_ram__parameterized0 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[10].u_wb |  sdp_ram__parameterized0_1 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[11].u_wb |  sdp_ram__parameterized0_2 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[12].u_wb |  sdp_ram__parameterized0_3 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[13].u_wb |  sdp_ram__parameterized0_4 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[14].u_wb |  sdp_ram__parameterized0_5 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[15].u_wb |  sdp_ram__parameterized0_6 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[16].u_wb |  sdp_ram__parameterized0_7 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[17].u_wb |  sdp_ram__parameterized0_8 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[18].u_wb |  sdp_ram__parameterized0_9 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[19].u_wb | sdp_ram__parameterized0_10 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[1].u_wb  | sdp_ram__parameterized0_11 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[20].u_wb | sdp_ram__parameterized0_12 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[21].u_wb | sdp_ram__parameterized0_13 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[22].u_wb | sdp_ram__parameterized0_14 |        559 |        559 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[23].u_wb | sdp_ram__parameterized0_15 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[24].u_wb | sdp_ram__parameterized0_16 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[25].u_wb | sdp_ram__parameterized0_17 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[26].u_wb | sdp_ram__parameterized0_18 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[27].u_wb | sdp_ram__parameterized0_19 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[28].u_wb | sdp_ram__parameterized0_20 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[29].u_wb | sdp_ram__parameterized0_21 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[2].u_wb  | sdp_ram__parameterized0_22 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[30].u_wb | sdp_ram__parameterized0_23 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[31].u_wb | sdp_ram__parameterized0_24 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[3].u_wb  | sdp_ram__parameterized0_25 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[4].u_wb  | sdp_ram__parameterized0_26 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[5].u_wb  | sdp_ram__parameterized0_27 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[6].u_wb  | sdp_ram__parameterized0_28 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[7].u_wb  | sdp_ram__parameterized0_29 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[8].u_wb  | sdp_ram__parameterized0_30 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[9].u_wb  | sdp_ram__parameterized0_31 |        560 |        560 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       u_ep          |                   epilogue |       9058 |       9057 |       0 |    1 |  3169 |      0 |      0 |    0 |         32 |
+|       u_lb          |    sdp_ram__parameterized1 |       5496 |       5496 |       0 |    0 |     0 |     28 |      1 |    0 |          0 |
+|       u_of          |                  sync_fifo |         20 |         20 |       0 |    0 |    13 |      0 |      0 |    0 |          0 |
+|       u_pe          |                   pe_array |      26176 |      26176 |       0 |    0 | 11136 |      0 |      0 |    0 |          0 |
+|     u_ll            |                line_loader |        910 |        846 |      64 |    0 |   496 |      4 |      0 |    0 |          2 |
+|       (u_ll)        |                line_loader |        437 |        373 |      64 |    0 |   440 |      0 |      0 |    0 |          2 |
+|       u_bg          |                burst_gen_0 |        152 |        152 |       0 |    0 |    56 |      0 |      0 |    0 |          0 |
+|       u_prb         |                    sdp_ram |        321 |        321 |       0 |    0 |     0 |      4 |      0 |    0 |          0 |
+|     u_regs          |                  axil_regs |        225 |        225 |       0 |    0 |   126 |      0 |      0 |    0 |          0 |
+|     u_wl            |              weight_loader |        202 |        202 |       0 |    0 |   308 |      0 |      0 |    0 |          0 |
+|       (u_wl)        |              weight_loader |         78 |         78 |       0 |    0 |   252 |      0 |      0 |    0 |          0 |
+|       u_bg          |                  burst_gen |        124 |        124 |       0 |    0 |    56 |      0 |      0 |    0 |          0 |
+|     u_wr            |                     writer |        536 |        536 |       0 |    0 |   521 |      0 |      0 |    0 |          2 |
++---------------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

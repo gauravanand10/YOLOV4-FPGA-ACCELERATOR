@@ -1,0 +1,57 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Sep 28 02:15:23 2026
+| Host         : Gaurav running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file D:/MPSOC_YOLO/06_vivado/reports/utilization_hier.rpt
+| Design       : system_wrapper
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+----------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+|          Instance          |                 Module                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | URAM | DSP Blocks |
++----------------------------+----------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+| system_wrapper             |                                  (top) |      56696 |      55905 |     476 |  315 | 23610 |     96 |      1 |    0 |         37 |
+|   system_i                 |                                 system |      56696 |      55905 |     476 |  315 | 23610 |     96 |      1 |    0 |         37 |
+|     rst_pl0                |                       system_rst_pl0_0 |         15 |         14 |       0 |    1 |    30 |      0 |      0 |    0 |          0 |
+|       U0                   |                         proc_sys_reset |         15 |         14 |       0 |    1 |    30 |      0 |      0 |    0 |          0 |
+|         (U0)               |                         proc_sys_reset |          0 |          0 |       0 |    0 |     3 |      0 |      0 |    0 |          0 |
+|         EXT_LPF            |                                    lpf |          4 |          3 |       0 |    1 |     9 |      0 |      0 |    0 |          0 |
+|         SEQ                |                           sequence_psr |         12 |         12 |       0 |    0 |    18 |      0 |      0 |    0 |          0 |
+|     sc_ctrl                |                       system_sc_ctrl_0 |        389 |        388 |       0 |    1 |   557 |      0 |      0 |    0 |          0 |
+|       inst                 |                                bd_73a6 |        389 |        388 |       0 |    1 |   557 |      0 |      0 |    0 |          0 |
+|         clk_map            |                    clk_map_imp_1MM1RYS |         12 |         11 |       0 |    1 |    22 |      0 |      0 |    0 |          0 |
+|         m00_exit_pipeline  |           m00_exit_pipeline_imp_C36SR3 |          7 |          7 |       0 |    0 |     9 |      0 |      0 |    0 |          0 |
+|         m00_sc2axi         |                       bd_73a6_m00s2a_0 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|         s00_axi2sc         |                       bd_73a6_s00a2s_0 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|         s00_entry_pipeline |         s00_entry_pipeline_imp_1ATB024 |        334 |        334 |       0 |    0 |   400 |      0 |      0 |    0 |          0 |
+|         s00_nodes          |                  s00_nodes_imp_1GFXR86 |         38 |         38 |       0 |    0 |   126 |      0 |      0 |    0 |          0 |
+|     sc_mem                 |                        system_sc_mem_0 |       1492 |        920 |     264 |  308 |  1744 |      0 |      0 |    0 |          0 |
+|       inst                 |                                bd_0182 |       1492 |        920 |     264 |  308 |  1744 |      0 |      0 |    0 |          0 |
+|         clk_map            |                     clk_map_imp_9ADCLJ |         12 |         11 |       0 |    1 |    22 |      0 |      0 |    0 |          0 |
+|         m00_exit_pipeline  |          m00_exit_pipeline_imp_1OFXE58 |         59 |         54 |       0 |    5 |    27 |      0 |      0 |    0 |          0 |
+|         m00_sc2axi         |                       bd_0182_m00s2a_0 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|         s00_axi2sc         |                       bd_0182_s00a2s_0 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|         s00_entry_pipeline |          s00_entry_pipeline_imp_P8Y0V3 |        963 |        661 |       0 |  302 |  1148 |      0 |      0 |    0 |          0 |
+|         s00_nodes          |                   s00_nodes_imp_LZUAX1 |        459 |        195 |     264 |    0 |   547 |      0 |      0 |    0 |          0 |
+|     yolo_accel             |                    system_yolo_accel_0 |      54801 |      54584 |     212 |    5 | 21279 |     96 |      1 |    0 |         37 |
+|       (yolo_accel)         |                    system_yolo_accel_0 |        148 |          0 |     148 |    0 |     0 |      0 |      0 |    0 |          0 |
+|       inst                 |                        yolo_accel_wrap |      54653 |      54584 |      64 |    5 | 21279 |     96 |      1 |    0 |         37 |
+|         u_core             |                             yolo_accel |      54653 |      54584 |      64 |    5 | 21279 |     96 |      1 |    0 |         37 |
+|     zynq_ps                |                       system_zynq_ps_0 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|       inst                 | zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
++----------------------------+----------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

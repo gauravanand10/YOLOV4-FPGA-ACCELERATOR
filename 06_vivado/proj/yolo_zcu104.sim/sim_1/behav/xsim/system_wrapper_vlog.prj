@@ -1,0 +1,63 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/a317/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/f0b6/hdl/verilog" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/c783/hdl/verilog" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../../../04_rtl/yolo_pkg.sv" \
+"../../../../../../04_rtl/axil_regs.sv" \
+"../../../../../../04_rtl/burst_gen.sv" \
+"../../../../../../04_rtl/conv_engine.sv" \
+"../../../../../../04_rtl/epilogue.sv" \
+"../../../../../../04_rtl/line_loader.sv" \
+"../../../../../../04_rtl/pe_array.sv" \
+"../../../../../../04_rtl/sdp_ram.sv" \
+"../../../../../../04_rtl/sync_fifo.sv" \
+"../../../../../../04_rtl/weight_loader.sv" \
+"../../../../../../04_rtl/writer.sv" \
+"../../../../../../04_rtl/yolo_accel.sv" \
+
+verilog xil_defaultlib  --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/a317/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/f0b6/hdl/verilog" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/c783/hdl/verilog" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../../../04_rtl/yolo_accel_wrap.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_zynq_ps_0/sim/system_zynq_ps_0_vip_wrapper.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_yolo_accel_0/sim/system_yolo_accel_0.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_0/sim/bd_73a6_one_0.v" \
+
+sv xil_defaultlib  --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/a317/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/f0b6/hdl/verilog" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/c783/hdl/verilog" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_2/sim/bd_73a6_s00mmu_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_3/sim/bd_73a6_s00tr_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_4/sim/bd_73a6_s00sic_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_5/sim/bd_73a6_s00a2s_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/sim/bd_73a6_sarn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/sim/bd_73a6_srn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/sim/bd_73a6_sawn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/sim/bd_73a6_swn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/sim/bd_73a6_sbn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_11/sim/bd_73a6_m00s2a_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_12/sim/bd_73a6_m00e_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/a317/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/f0b6/hdl/verilog" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/c783/hdl/verilog" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/sim/bd_73a6.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/sim/system_sc_ctrl_0.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_0/sim/bd_0182_one_0.v" \
+
+sv xil_defaultlib  --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/a317/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/f0b6/hdl/verilog" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/c783/hdl/verilog" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_2/sim/bd_0182_s00mmu_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_3/sim/bd_0182_s00tr_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_4/sim/bd_0182_s00sic_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_5/sim/bd_0182_s00a2s_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/sim/bd_0182_sarn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/sim/bd_0182_srn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/sim/bd_0182_sawn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/sim/bd_0182_swn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/sim/bd_0182_sbn_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_11/sim/bd_0182_m00s2a_0.sv" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_12/sim/bd_0182_m00e_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/a317/hdl" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/f0b6/hdl/verilog" --include "../../../../yolo_zcu104.gen/sources_1/bd/system/ipshared/c783/hdl/verilog" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/sim/bd_0182.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/sim/system_sc_mem_0.v" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/sim/system.v" \
+"../../../../yolo_zcu104.gen/sources_1/bd/system/hdl/system_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 01:35:15 2026
+# Process ID: 17088
+# Current directory: D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/system_wrapper.vds
+# Journal file: D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1\vivado.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :13411 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

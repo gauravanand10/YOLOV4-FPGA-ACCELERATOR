@@ -1,0 +1,1588 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 01:35:15 2026
+# Process ID: 17088
+# Current directory: D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/system_wrapper.vds
+# Journal file: D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1\vivado.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :13411 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 520.875 ; gain = 205.434
+source D:/MPSOC_YOLO/06_vivado/lowmem_pre.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top system_wrapper -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9624
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2483.781 ; gain = 403.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:2490]
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/hdl/system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-638] synthesizing module 'system_rst_pl0_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/synth/system_rst_pl0_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/synth/system_rst_pl0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'system_rst_pl0_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/synth/system_rst_pl0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:153]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:153]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:153]
+WARNING: [Synth 8-7023] instance 'rst_pl0' of module 'system_rst_pl0_0' has 10 connections declared, but only 7 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:153]
+INFO: [Synth 8-6157] synthesizing module 'system_sc_ctrl_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/synth/system_sc_ctrl_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1MM1RYS' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:724]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_one_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_0/synth/bd_73a6_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_one_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_0/synth/bd_73a6_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_73a6_psr_aclk_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/synth/bd_73a6_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/synth/bd_73a6_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset__parameterized1' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf__parameterized0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized1' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'bd_73a6_psr_aclk_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/synth/bd_73a6_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_73a6_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:759]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_73a6_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:759]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_73a6_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:759]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_73a6_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:759]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_73a6_psr_aclk_0' has 10 connections declared, but only 6 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:759]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1MM1RYS' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:724]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_C36SR3' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:768]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_m00e_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_12/synth/bd_73a6_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_m00e_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_12/synth/bd_73a6_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_C36SR3' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:768]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_m00s2a_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_11/synth/bd_73a6_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_m00s2a_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_11/synth/bd_73a6_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_s00a2s_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_5/synth/bd_73a6_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_s00a2s_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_5/synth/bd_73a6_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1ATB024' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:1069]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_s00mmu_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_2/synth/bd_73a6_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_s00mmu_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_2/synth/bd_73a6_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_s00sic_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_4/synth/bd_73a6_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_s00sic_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_4/synth/bd_73a6_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_s00tr_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_3/synth/bd_73a6_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_s00tr_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_3/synth/bd_73a6_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1ATB024' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:1069]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1GFXR86' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:1728]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_sarn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/synth/bd_73a6_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_sarn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/synth/bd_73a6_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_sawn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/synth/bd_73a6_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_sawn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/synth/bd_73a6_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_sbn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/synth/bd_73a6_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_sbn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/synth/bd_73a6_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_srn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/synth/bd_73a6_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_srn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/synth/bd_73a6_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_73a6_swn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/synth/bd_73a6_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6_swn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/synth/bd_73a6_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1GFXR86' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:1728]
+INFO: [Synth 8-6155] done synthesizing module 'bd_73a6' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'system_sc_ctrl_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/synth/system_sc_ctrl_0.v:53]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'system_sc_ctrl_0' is unconnected for instance 'sc_ctrl' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:161]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'system_sc_ctrl_0' is unconnected for instance 'sc_ctrl' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:161]
+WARNING: [Synth 8-7023] instance 'sc_ctrl' of module 'system_sc_ctrl_0' has 60 connections declared, but only 58 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:161]
+INFO: [Synth 8-6157] synthesizing module 'system_sc_mem_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/synth/system_sc_mem_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_9ADCLJ' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:804]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_one_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_0/synth/bd_0182_one_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_one_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_0/synth/bd_0182_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_0182_psr_aclk_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/synth/bd_0182_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/synth/bd_0182_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_0182_psr_aclk_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/synth/bd_0182_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_0182_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:839]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_0182_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:839]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_0182_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:839]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_0182_psr_aclk_0' is unconnected for instance 'psr_aclk' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:839]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_0182_psr_aclk_0' has 10 connections declared, but only 6 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:839]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_9ADCLJ' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:804]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1OFXE58' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:848]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_m00e_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_12/synth/bd_0182_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_m00e_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_12/synth/bd_0182_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1OFXE58' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:848]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_m00s2a_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_11/synth/bd_0182_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_m00s2a_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_11/synth/bd_0182_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_s00a2s_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_5/synth/bd_0182_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_s00a2s_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_5/synth/bd_0182_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_P8Y0V3' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:1229]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_s00mmu_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_2/synth/bd_0182_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_s00mmu_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_2/synth/bd_0182_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_s00sic_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_4/synth/bd_0182_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_s00sic_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_4/synth/bd_0182_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_s00tr_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_3/synth/bd_0182_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_s00tr_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_3/synth/bd_0182_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_P8Y0V3' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:1229]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_LZUAX1' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:1888]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_sarn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/synth/bd_0182_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_sarn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/synth/bd_0182_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_sawn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/synth/bd_0182_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_sawn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/synth/bd_0182_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_sbn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/synth/bd_0182_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_sbn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/synth/bd_0182_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_srn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/synth/bd_0182_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_srn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/synth/bd_0182_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_0182_swn_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/synth/bd_0182_swn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182_swn_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/synth/bd_0182_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_LZUAX1' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:1888]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0182' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'system_sc_mem_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/synth/system_sc_mem_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_yolo_accel_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_yolo_accel_0/synth/system_yolo_accel_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'yolo_accel_wrap' [D:/MPSOC_YOLO/04_rtl/yolo_accel_wrap.v:4]
+INFO: [Synth 8-6157] synthesizing module 'yolo_accel' [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'axil_regs' [D:/MPSOC_YOLO/04_rtl/axil_regs.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'axil_regs' (0#1) [D:/MPSOC_YOLO/04_rtl/axil_regs.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'weight_loader' [D:/MPSOC_YOLO/04_rtl/weight_loader.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'burst_gen' [D:/MPSOC_YOLO/04_rtl/burst_gen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'burst_gen' (0#1) [D:/MPSOC_YOLO/04_rtl/burst_gen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'weight_loader' (0#1) [D:/MPSOC_YOLO/04_rtl/weight_loader.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'line_loader' [D:/MPSOC_YOLO/04_rtl/line_loader.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'sdp_ram' [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+	Parameter W bound to: 32'sb00000000000000000000000010000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000001010 
+	Parameter LAT bound to: 32'sb00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'sdp_ram' (0#1) [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'line_loader' (0#1) [D:/MPSOC_YOLO/04_rtl/line_loader.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'conv_engine' [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'sdp_ram__parameterized0' [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+	Parameter W bound to: 32'sb00000000000000000000000010000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000001001 
+	Parameter LAT bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'sdp_ram__parameterized0' (0#1) [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sdp_ram__parameterized1' [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+	Parameter W bound to: 32'sb00000000000000000000000010000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000001101 
+	Parameter LAT bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'sdp_ram__parameterized1' (0#1) [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pe_array' [D:/MPSOC_YOLO/04_rtl/pe_array.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'pe_array' (0#1) [D:/MPSOC_YOLO/04_rtl/pe_array.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'epilogue' [D:/MPSOC_YOLO/04_rtl/epilogue.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'epilogue' (0#1) [D:/MPSOC_YOLO/04_rtl/epilogue.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo' [D:/MPSOC_YOLO/04_rtl/sync_fifo.sv:2]
+	Parameter W bound to: 32'sb00000000000000000000000100000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo' (0#1) [D:/MPSOC_YOLO/04_rtl/sync_fifo.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'conv_engine' (0#1) [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'writer' [D:/MPSOC_YOLO/04_rtl/writer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'writer' (0#1) [D:/MPSOC_YOLO/04_rtl/writer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_accel' (0#1) [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_accel_wrap' (0#1) [D:/MPSOC_YOLO/04_rtl/yolo_accel_wrap.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'system_yolo_accel_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_yolo_accel_0/synth/system_yolo_accel_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_zynq_ps_0' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:68]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_PS' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2187]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_PS' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2187]
+INFO: [Synth 8-6157] synthesizing module 'PS8' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:116504]
+INFO: [Synth 8-6155] done synthesizing module 'PS8' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:116504]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO0DATAIN' does not match port width (8) of module 'PS8' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:4674]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO0DATAOUT' does not match port width (8) of module 'PS8' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:4675]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO0DATAENA' does not match port width (8) of module 'PS8' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:4676]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO1DATAIN' does not match port width (8) of module 'PS8' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:4687]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO1DATAOUT' does not match port width (8) of module 'PS8' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:4688]
+WARNING: [Synth 8-689] width (4) of port connection 'EMIOSDIO1DATAENA' does not match port width (8) of module 'PS8' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:4689]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADO' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_BOOTMODE' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_CLK' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DONEB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMA' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMACTN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMALERTN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBA' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBG' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCK' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKE' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCSN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDM' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQ' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQS' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQSN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMODT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMPARITY' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMRAMRSTN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERROROUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERRORSTATUS' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_INITB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTCK' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDI' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDO' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTMS' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MIO' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PORB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PROGB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_RCALIBINOUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_SRSTB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ZQ' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADI' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+WARNING: [Synth 8-7023] instance 'PS8_i' of module 'PS8' has 1015 connections declared, but only 957 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3865]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:68]
+WARNING: [Synth 8-7071] port 'emio_enet0_signal_detect' of module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:359]
+WARNING: [Synth 8-7071] port 'emio_enet1_signal_detect' of module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:359]
+WARNING: [Synth 8-7071] port 'emio_enet2_signal_detect' of module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:359]
+WARNING: [Synth 8-7071] port 'emio_enet3_signal_detect' of module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:359]
+WARNING: [Synth 8-7023] instance 'inst' of module 'zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e' has 1491 connections declared, but only 1487 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:359]
+INFO: [Synth 8-6155] done synthesizing module 'system_zynq_ps_0' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/synth/system_zynq_ps_0.v:53]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'system_zynq_ps_0' is unconnected for instance 'zynq_ps' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:357]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'system_zynq_ps_0' is unconnected for instance 'zynq_ps' [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:357]
+WARNING: [Synth 8-7023] instance 'zynq_ps' of module 'system_zynq_ps_0' has 83 connections declared, but only 81 given [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:357]
+INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (0#1) [D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/hdl/system_wrapper.v:13]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1MM1RYS does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/synth/bd_73a6.v:740]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_9ADCLJ does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/synth/bd_0182.v:820]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_v_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:161]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_inb_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:164]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_last_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:163]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_first_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element dsc_reg[in_h] was removed.  [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:117]
+WARNING: [Synth 8-3848] Net dp_audio_ref_clk in module/entity zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:364]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_0 in module/entity zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:1384]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_1 in module/entity zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:1385]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_2 in module/entity zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:1386]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_3 in module/entity zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e does not have driver. [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/hdl/zynq_ultra_ps_e_v3_5_3.v:1387]
+WARNING: [Synth 8-7129] Port dp_audio_ref_clk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_0 in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_1 in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_2 in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_3 in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc0_fpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc0_fpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc1_fpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc1_fpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp0_fpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp0_fpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp1_fpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp1_fpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp2_fpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp2_fpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp3_fpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp3_fpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxi_lpd_rclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxi_lpd_wclk in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[15] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[14] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[13] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[12] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[11] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[10] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[9] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[8] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[7] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[6] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[15] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[14] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[13] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[12] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[11] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[10] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[9] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[8] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[7] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[6] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[3] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[2] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[1] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[0] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[31] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[30] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[29] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[28] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[27] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[26] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[25] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[24] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[23] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[22] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[21] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[20] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[19] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[18] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[17] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[16] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[15] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[14] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[13] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[12] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[11] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[10] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[9] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[8] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[7] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[6] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[5] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[4] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[3] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[2] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[1] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[0] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[31] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[30] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[29] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[28] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[27] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[26] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[25] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[24] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[23] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[22] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[21] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[20] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[19] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[18] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[17] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[16] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[15] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[14] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[13] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[12] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[11] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[10] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[9] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2876.734 ; gain = 796.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2894.641 ; gain = 814.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2894.641 ; gain = 814.227
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2976.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/system_zynq_ps_0.xdc] for cell 'system_i/zynq_ps/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/system_zynq_ps_0.xdc] for cell 'system_i/zynq_ps/inst'
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/system_rst_pl0_0_board.xdc] for cell 'system_i/rst_pl0/U0'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/system_rst_pl0_0_board.xdc] for cell 'system_i/rst_pl0/U0'
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/system_rst_pl0_0.xdc] for cell 'system_i/rst_pl0/U0'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/system_rst_pl0_0.xdc] for cell 'system_i/rst_pl0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_rst_pl0_0/system_rst_pl0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/bd_73a6_psr_aclk_0_board.xdc] for cell 'system_i/sc_ctrl/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/bd_73a6_psr_aclk_0_board.xdc] for cell 'system_i/sc_ctrl/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/bd_73a6_psr_aclk_0.xdc] for cell 'system_i/sc_ctrl/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/bd_73a6_psr_aclk_0.xdc] for cell 'system_i/sc_ctrl/inst/clk_map/psr_aclk/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/bd_73a6_psr_aclk_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/bd_73a6_sarn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_ar_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/bd_73a6_sarn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_ar_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/bd_73a6_sarn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/bd_73a6_srn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_r_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/bd_73a6_srn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_r_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/bd_73a6_srn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/bd_73a6_sawn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_aw_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/bd_73a6_sawn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_aw_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/bd_73a6_sawn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/bd_73a6_swn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/bd_73a6_swn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_w_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/bd_73a6_swn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/bd_73a6_sbn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/bd_73a6_sbn_0_clocks.xdc] for cell 'system_i/sc_ctrl/inst/s00_nodes/s00_b_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/bd_73a6_sbn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/smartconnect.xdc] for cell 'system_i/sc_ctrl/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/smartconnect.xdc] for cell 'system_i/sc_ctrl/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_ctrl_0/smartconnect.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/bd_0182_psr_aclk_0_board.xdc] for cell 'system_i/sc_mem/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/bd_0182_psr_aclk_0_board.xdc] for cell 'system_i/sc_mem/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/bd_0182_psr_aclk_0.xdc] for cell 'system_i/sc_mem/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/bd_0182_psr_aclk_0.xdc] for cell 'system_i/sc_mem/inst/clk_map/psr_aclk/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/bd_0182_psr_aclk_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/bd_0182_sarn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_ar_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/bd_0182_sarn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_ar_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/bd_0182_sarn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/bd_0182_srn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_r_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/bd_0182_srn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_r_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/bd_0182_srn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/bd_0182_sawn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_aw_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/bd_0182_sawn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_aw_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/bd_0182_sawn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/bd_0182_swn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/bd_0182_swn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_w_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/bd_0182_swn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/bd_0182_sbn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/bd_0182_sbn_0_clocks.xdc] for cell 'system_i/sc_mem/inst/s00_nodes/s00_b_node/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/bd_0182_sbn_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/smartconnect.xdc] for cell 'system_i/sc_mem/inst'
+Finished Parsing XDC File [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/smartconnect.xdc] for cell 'system_i/sc_mem/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_sc_mem_0/smartconnect.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 33 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3501.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  FDR => FDRE: 36 instances
+  SRL16 => SRL16E: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 3501.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 3501.418 ; gain = 1421.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 3501.418 ; gain = 1421.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for system_i/zynq_ps/inst/PS8_i. (constraint file  d:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/ip/system_zynq_ps_0/system_zynq_ps_0.xdc, line 25).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/zynq_ps/inst. (constraint file  D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc, line 109).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/rst_pl0/U0. (constraint file  D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc, line 112).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst. (constraint file  D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc, line 155).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst. (constraint file  D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/dont_touch.xdc, line 195).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/zynq_ps. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/yolo_accel. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/rst_pl0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_ctrl/inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/sc_mem/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 3501.418 ; gain = 1421.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_13_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_13_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_13_axilite_conv'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_13_decerr_slave__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_13_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_13_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                               00 | 00000000000000000000000000000000
+               R_PENDING |                               01 | 00000000000000000000000000000001
+                    R_RX |                               10 | 00000000000000000000000000000010
+                    R_TX |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_13_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_13_decerr_slave__parameterized0'
+INFO: [Synth 8-6904] The RAM "line_loader:/hreg_reg" of size (depth=32 x width=128) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 3501.418 ; gain = 1421.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 32    
+	   2 Input   32 Bit       Adders := 16    
+	   3 Input   32 Bit       Adders := 1     
+	   3 Input   24 Bit       Adders := 2     
+	   2 Input   22 Bit       Adders := 1     
+	   4 Input   20 Bit       Adders := 32    
+	   2 Input   18 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 18    
+	   4 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 19    
+	   2 Input    7 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 66    
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 5     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 30    
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 5     
+	   3 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 77    
++---Registers : 
+	             2178 Bit    Registers := 12    
+	              512 Bit    Registers := 2     
+	              256 Bit    Registers := 1     
+	              224 Bit    Registers := 1     
+	              181 Bit    Registers := 2     
+	              178 Bit    Registers := 1     
+	              166 Bit    Registers := 1     
+	              158 Bit    Registers := 2     
+	              148 Bit    Registers := 2     
+	              128 Bit    Registers := 105   
+	               70 Bit    Registers := 2     
+	               64 Bit    Registers := 5     
+	               47 Bit    Registers := 2     
+	               46 Bit    Registers := 32    
+	               40 Bit    Registers := 1     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 59    
+	               27 Bit    Registers := 32    
+	               24 Bit    Registers := 4     
+	               23 Bit    Registers := 1     
+	               20 Bit    Registers := 33    
+	               18 Bit    Registers := 168   
+	               16 Bit    Registers := 31    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 3     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 50    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 115   
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 33    
+	                3 Bit    Registers := 54    
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 358   
++---RAMs : 
+	            1024K Bit	(8192 X 128 bit)          RAMs := 1     
+	             128K Bit	(1024 X 128 bit)          RAMs := 1     
+	              64K Bit	(512 X 128 bit)          RAMs := 32    
+	               4K Bit	(32 X 128 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 6     
+	  11 Input  512 Bit        Muxes := 1     
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input  148 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 14    
+	   2 Input   47 Bit        Muxes := 1     
+	   4 Input   40 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 24    
+	   3 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 5     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 39    
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 15    
+	   4 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	  11 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 7     
+	   5 Input   12 Bit        Muxes := 1     
+	   5 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 115   
+	   4 Input    8 Bit        Muxes := 3     
+	  11 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 9     
+	   2 Input    7 Bit        Muxes := 19    
+	   2 Input    6 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 22    
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 14    
+	   4 Input    3 Bit        Muxes := 13    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 47    
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 69    
+	   4 Input    1 Bit        Muxes := 45    
+	   7 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 22    
+	   2 Input    1 Bit        Muxes := 367   
+	   5 Input    1 Bit        Muxes := 16    
+	  12 Input    1 Bit        Muxes := 10    
+	  11 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP g_lane[4].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[4].r3_reg is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: register g_lane[4].r3_reg is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: register g_lane[4].p2_reg is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: operator g_lane[4].r30 is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: operator g_lane[4].p20 is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: Generating DSP g_lane[14].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[14].r3_reg is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: register g_lane[14].r3_reg is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: register g_lane[14].p2_reg is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: operator g_lane[14].r30 is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: operator g_lane[14].p20 is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: Generating DSP g_lane[15].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[15].r3_reg is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: register g_lane[15].r3_reg is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: register g_lane[15].p2_reg is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: operator g_lane[15].r30 is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: operator g_lane[15].p20 is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: Generating DSP g_lane[16].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[16].r3_reg is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: register g_lane[16].r3_reg is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: register g_lane[16].p2_reg is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: operator g_lane[16].r30 is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: operator g_lane[16].p20 is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: Generating DSP g_lane[17].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[17].r3_reg is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: register g_lane[17].r3_reg is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: register g_lane[17].p2_reg is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: operator g_lane[17].r30 is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: operator g_lane[17].p20 is absorbed into DSP g_lane[17].r3_reg.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+DSP Report: Generating DSP g_lane[0].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[0].r3_reg is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: register g_lane[0].r3_reg is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: register g_lane[0].p2_reg is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: operator g_lane[0].r30 is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: operator g_lane[0].p20 is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: Generating DSP g_lane[5].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[5].r3_reg is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: register g_lane[5].r3_reg is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: register g_lane[5].p2_reg is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: operator g_lane[5].r30 is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: operator g_lane[5].p20 is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: Generating DSP g_lane[6].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[6].r3_reg is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: register g_lane[6].r3_reg is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: register g_lane[6].p2_reg is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: operator g_lane[6].r30 is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: operator g_lane[6].p20 is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: Generating DSP g_lane[7].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[7].r3_reg is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: register g_lane[7].r3_reg is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: register g_lane[7].p2_reg is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: operator g_lane[7].r30 is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: operator g_lane[7].p20 is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: Generating DSP g_lane[8].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[8].r3_reg is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: register g_lane[8].r3_reg is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: register g_lane[8].p2_reg is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: operator g_lane[8].r30 is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: operator g_lane[8].p20 is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: Generating DSP g_lane[10].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[10].r3_reg is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: register g_lane[10].r3_reg is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: register g_lane[10].p2_reg is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: operator g_lane[10].r30 is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: operator g_lane[10].p20 is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: Generating DSP g_lane[11].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[11].r3_reg is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: register g_lane[11].r3_reg is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: register g_lane[11].p2_reg is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: operator g_lane[11].r30 is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: operator g_lane[11].p20 is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: Generating DSP g_lane[12].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[12].r3_reg is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: register g_lane[12].r3_reg is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: register g_lane[12].p2_reg is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: operator g_lane[12].r30 is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: operator g_lane[12].p20 is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: Generating DSP g_lane[21].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[21].r3_reg is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: register g_lane[21].r3_reg is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: register g_lane[21].p2_reg is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: operator g_lane[21].r30 is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: operator g_lane[21].p20 is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: Generating DSP g_lane[28].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[28].r3_reg is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: register g_lane[28].r3_reg is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: register g_lane[28].p2_reg is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: operator g_lane[28].r30 is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: operator g_lane[28].p20 is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: Generating DSP g_lane[29].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[29].r3_reg is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: register g_lane[29].r3_reg is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: register g_lane[29].p2_reg is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: operator g_lane[29].r30 is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: operator g_lane[29].p20 is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: Generating DSP g_lane[30].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[30].r3_reg is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: register g_lane[30].r3_reg is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: register g_lane[30].p2_reg is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: operator g_lane[30].r30 is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: operator g_lane[30].p20 is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: Generating DSP g_lane[1].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[1].r3_reg is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: register g_lane[1].r3_reg is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: register g_lane[1].p2_reg is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: operator g_lane[1].r30 is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: operator g_lane[1].p20 is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: Generating DSP g_lane[3].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[3].r3_reg is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: register g_lane[3].r3_reg is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: register g_lane[3].p2_reg is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: operator g_lane[3].r30 is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: operator g_lane[3].p20 is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: Generating DSP g_lane[2].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[2].r3_reg is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: register g_lane[2].r3_reg is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: register g_lane[2].p2_reg is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: operator g_lane[2].r30 is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: operator g_lane[2].p20 is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: Generating DSP g_lane[9].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[9].r3_reg is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: register g_lane[9].r3_reg is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: register g_lane[9].p2_reg is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: operator g_lane[9].r30 is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: operator g_lane[9].p20 is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: Generating DSP g_lane[13].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[13].r3_reg is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: register g_lane[13].r3_reg is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: register g_lane[13].p2_reg is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: operator g_lane[13].r30 is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: operator g_lane[13].p20 is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: Generating DSP g_lane[18].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[18].r3_reg is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: register g_lane[18].r3_reg is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: register g_lane[18].p2_reg is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: operator g_lane[18].r30 is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: operator g_lane[18].p20 is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: Generating DSP g_lane[19].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[19].r3_reg is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: register g_lane[19].r3_reg is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: register g_lane[19].p2_reg is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: operator g_lane[19].r30 is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: operator g_lane[19].p20 is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: Generating DSP g_lane[20].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[20].r3_reg is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: register g_lane[20].r3_reg is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: register g_lane[20].p2_reg is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: operator g_lane[20].r30 is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: operator g_lane[20].p20 is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: Generating DSP g_lane[22].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[22].r3_reg is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: register g_lane[22].r3_reg is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: register g_lane[22].p2_reg is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: operator g_lane[22].r30 is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: operator g_lane[22].p20 is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: Generating DSP g_lane[23].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[23].r3_reg is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: register g_lane[23].r3_reg is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: register g_lane[23].p2_reg is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: operator g_lane[23].r30 is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: operator g_lane[23].p20 is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: Generating DSP g_lane[24].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[24].r3_reg is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: register g_lane[24].r3_reg is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: register g_lane[24].p2_reg is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: operator g_lane[24].r30 is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: operator g_lane[24].p20 is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: Generating DSP g_lane[25].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[25].r3_reg is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: register g_lane[25].r3_reg is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: register g_lane[25].p2_reg is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: operator g_lane[25].r30 is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: operator g_lane[25].p20 is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: Generating DSP g_lane[26].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[26].r3_reg is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: register g_lane[26].r3_reg is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: register g_lane[26].p2_reg is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: operator g_lane[26].r30 is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: operator g_lane[26].p20 is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: Generating DSP g_lane[27].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[27].r3_reg is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: register g_lane[27].r3_reg is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: register g_lane[27].p2_reg is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: operator g_lane[27].r30 is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: operator g_lane[27].p20 is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: Generating DSP g_lane[31].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[31].r3_reg is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: register g_lane[31].r3_reg is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: register g_lane[31].p2_reg is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: operator g_lane[31].r30 is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: operator g_lane[31].p20 is absorbed into DSP g_lane[31].r3_reg.
+INFO: [Synth 8-4471] merging register 's0_ix_reg[17:0]' into 's0_ix_reg[17:0]' [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:91]
+INFO: [Synth 8-4471] merging register 's0_ix_reg[17:0]' into 's0_ix_reg[17:0]' [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:91]
+DSP Report: Generating DSP s1_lba0, operation Mode is: C'+A2*B.
+DSP Report: register s0_ix_reg is absorbed into DSP s1_lba0.
+DSP Report: register s0_c_reg is absorbed into DSP s1_lba0.
+DSP Report: operator s1_lba0 is absorbed into DSP s1_lba0.
+DSP Report: operator s0_xoff is absorbed into DSP s1_lba0.
+INFO: [Synth 8-6904] The RAM "u_ll/hreg_reg" of size (depth=32 x width=128) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+DSP Report: Generating DSP row_addr0, operation Mode is: C+(A*B)'.
+DSP Report: register row_bytes_reg is absorbed into DSP row_addr0.
+DSP Report: operator row_bytes0 is absorbed into DSP row_addr0.
+DSP Report: operator row_addr0 is absorbed into DSP row_addr0.
+DSP Report: Generating DSP row_beats_reg, operation Mode is: (0 or C)+((A*B)' or 0).
+DSP Report: register row_beats_reg is absorbed into DSP row_beats_reg.
+DSP Report: operator row_beats0 is absorbed into DSP row_beats_reg.
+DSP Report: Generating DSP rowb0_reg, operation Mode is: (A*B)'.
+DSP Report: register rowb0_reg is absorbed into DSP rowb0_reg.
+DSP Report: operator rowb00 is absorbed into DSP rowb0_reg.
+DSP Report: Generating DSP rowb1_reg, operation Mode is: (A*B)'.
+DSP Report: register rowb1_reg is absorbed into DSP rowb1_reg.
+DSP Report: operator rowb10 is absorbed into DSP rowb1_reg.
+INFO: [Synth 8-4471] merging register 'dbeat_reg[1:0]' into 'dbeat_reg[1:0]' [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:115]
+INFO: [Synth 8-6904] The RAM "u_ll/hreg_reg" of size (depth=32 x width=128) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:09 . Memory (MB): peak = 3501.418 ; gain = 1421.004
+---------------------------------------------------------------------------------
+ Sort Area is epilogue__GB0 g_lane[0].r3_reg_0 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[10].r3_reg_6 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[11].r3_reg_7 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[12].r3_reg_8 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[13].r3_reg_3 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[14].r3_reg_2 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[15].r3_reg_3 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[16].r3_reg_4 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[17].r3_reg_5 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[18].r3_reg_4 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[19].r3_reg_5 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[1].r3_reg_d : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[20].r3_reg_6 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[21].r3_reg_9 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[22].r3_reg_7 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[23].r3_reg_8 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[24].r3_reg_9 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[25].r3_reg_a : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[26].r3_reg_b : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[27].r3_reg_c : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[28].r3_reg_a : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[29].r3_reg_b : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[2].r3_reg_0 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[30].r3_reg_c : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[31].r3_reg_d : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[3].r3_reg_e : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[4].r3_reg_0 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[5].r3_reg_2 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[6].r3_reg_3 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[7].r3_reg_4 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[8].r3_reg_5 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[9].r3_reg_2 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 rowb0_reg_4 : 0 0 : 2075 2075 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 rowb1_reg_6 : 0 0 : 2075 2075 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 row_addr0_0 : 0 0 : 2073 2073 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 row_beats_reg_2 : 0 0 : 926 926 : Used 1 time 0
+ Sort Area is conv_engine__GCB0 s1_lba0_0 : 0 0 : 615 615 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name       | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|conv_engine__GCB0 | g_wb[0].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[1].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[2].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[3].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[4].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[5].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[6].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[7].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[8].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[9].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[10].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[11].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[12].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[13].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[14].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[15].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[16].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[17].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[18].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[19].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[20].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[21].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[22].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[23].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[24].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[25].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[26].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[27].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[28].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[29].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[30].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[31].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|u_lb              | mem_reg               | 8 K x 128(READ_FIRST)  | W |   | 8 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 28     | 8,8,8,4,1       | 
+|u_ll              | u_prb/mem_reg         | 1 K x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 1,1,1,1         | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+-----------------+
+|Module Name                                                                                                                                                                                    | RTL Object                       | Inference      | Size (Depth x Width) | Primitives      | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+-----------------+
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 158             | RAM32M16 x 12   | 
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 158             | RAM32M16 x 12   | 
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 166             | RAM32M16 x 12   | 
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 178             | RAM32M16 x 13   | 
+|conv_engine__GCB0                                                                                                                                                                              | u_of/mem_reg                     | User Attribute | 16 x 256             | RAM32M16 x 19   | 
+|u_ll                                                                                                                                                                                           | hreg_reg                         | Implied        | 32 x 128             | RAM32X1S x 128  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|system_yolo_accel_0 | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_engine         | C'+A2*B                | 10     | 8      | 8      | -      | 10     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
+|line_loader         | C+(A*B)'               | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|line_loader         | (0 or C)+((A*B)' or 0) | 16     | 8      | 8      | -      | 24     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|writer              | (A*B)'                 | 17     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|writer              | (A*B)'                 | 17     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++--------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:01 ; elapsed = 00:02:24 . Memory (MB): peak = 4478.117 ; gain = 2397.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "system_i/yolo_accel/u_corei_4/\inst/u_core/u_eng/u_lb /mem_reg" may be mapped as a cascade chain, because it is not timing critical.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:13 ; elapsed = 00:03:37 . Memory (MB): peak = 4804.734 ; gain = 2724.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                            | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|system_i/yolo_accel/u_corei_4/\inst/u_core/u_eng/u_lb  | mem_reg               | 8 K x 128(READ_FIRST)  | W |   | 8 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 28     | 8,8,8,4,1       | 
+|conv_engine__GCB0                                      | g_wb[0].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[1].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[2].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[3].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[4].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[5].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[6].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[7].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[8].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[9].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[10].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[11].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[12].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[13].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[14].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[15].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[16].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[17].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[18].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[19].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[20].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[21].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[22].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[23].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[24].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[25].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[26].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[27].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[28].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[29].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[30].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0                                      | g_wb[31].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|u_ll                                                   | u_prb/mem_reg         | 1 K x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 1,1,1,1         | 
++-------------------------------------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+-----------------+
+|Module Name                                                                                                                                                                                    | RTL Object                       | Inference      | Size (Depth x Width) | Primitives      | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+-----------------+
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 158             | RAM32M16 x 12   | 
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 158             | RAM32M16 x 12   | 
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 166             | RAM32M16 x 12   | 
+|system_i/sc_mem/inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 178             | RAM32M16 x 13   | 
+|conv_engine__GCB0                                                                                                                                                                              | u_of/mem_reg                     | User Attribute | 16 x 256             | RAM32M16 x 19   | 
+|u_ll                                                                                                                                                                                           | hreg_reg                         | Implied        | 32 x 128             | RAM32X1S x 128  | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/u_corei_3/inst/u_core/u_ll/u_prb/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/u_corei_3/inst/u_core/u_ll/u_prb/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/u_corei_3/inst/u_core/u_ll/u_prb/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/u_corei_3/inst/u_core/u_ll/u_prb/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:29 ; elapsed = 00:04:26 . Memory (MB): peak = 4804.734 ; gain = 2724.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/inst/u_core/u_ll/u_prb/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/inst/u_core/u_ll/u_prb/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/inst/u_core/u_ll/u_prb/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance system_i/yolo_accel/inst/u_core/u_ll/u_prb/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[0]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[7]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[6]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[5]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[4]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[3]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[2]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[1]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[4] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:41 ; elapsed = 00:04:39 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:42 ; elapsed = 00:04:39 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:56 ; elapsed = 00:04:54 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:00 ; elapsed = 00:04:58 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:02 ; elapsed = 00:04:59 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:02 ; elapsed = 00:05:00 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|system_yolo_accel_0 | inst/u_core/u_eng/u_ep/v_reg[4]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|system_yolo_accel_0 | inst/u_core/u_eng/q_v_reg[2]     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|system_yolo_accel_0 | inst/u_core/u_eng/q_last_reg[2]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|system_yolo_accel_0 | inst/u_core/u_eng/q_first_reg[2] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|system_yolo_accel_0 | inst/u_core/u_eng/p_inb_reg[1]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | shift_reg_reg | 32     | 1          | 0      | 1       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv_engine         | (C'+A'*B'')'  | 10     | 8      | 8      | -      | 10     | 1    | 2    | 2    | -    | -     | 0    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|system_yolo_accel_0 | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2       | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|line_loader         | C'+(A''*B'')' | 16     | 16     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 0    | 
+|line_loader         | Dynamic       | -      | -      | -      | -      | 24     | -    | -    | -    | -    | -     | 1    | 0    | 
+|writer              | (A*B'')'      | 17     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|writer              | (A*B'')'      | 17     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
++--------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG_PS         |     1|
+|2     |CARRY8          |  6182|
+|3     |DSP_ALU         |    37|
+|5     |DSP_A_B_DATA    |    37|
+|9     |DSP_C_DATA      |    37|
+|11    |DSP_MULTIPLIER  |    37|
+|12    |DSP_M_DATA      |    37|
+|14    |DSP_OUTPUT      |    37|
+|16    |DSP_PREADD      |    37|
+|17    |DSP_PREADD_DATA |    37|
+|18    |LUT1            |   939|
+|19    |LUT2            | 27260|
+|20    |LUT3            |  7865|
+|21    |LUT4            | 12260|
+|22    |LUT5            |  5368|
+|23    |LUT6            | 21156|
+|24    |PS8             |     1|
+|25    |RAM32M          |     1|
+|26    |RAM32M16        |    51|
+|27    |RAM32X1S        |   128|
+|28    |RAMB18E2        |     1|
+|29    |RAMB36E2        |    96|
+|37    |SRL16           |     3|
+|38    |SRL16E          |    54|
+|39    |SRLC32E         |   272|
+|40    |FDCE            |    84|
+|41    |FDR             |    12|
+|42    |FDRE            | 22329|
+|43    |FDSE            |  1234|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:03 ; elapsed = 00:05:00 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6969 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:27 ; elapsed = 00:04:41 . Memory (MB): peak = 4808.637 ; gain = 2121.445
+Synthesis Optimization Complete : Time (s): cpu = 00:04:03 ; elapsed = 00:05:03 . Memory (MB): peak = 4808.637 ; gain = 2728.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4808.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6414 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4808.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 232 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 37 instances
+  FDR => FDRE: 12 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 51 instances
+  RAM32X1S => RAM32X1S (RAMS32): 128 instances
+  SRL16 => SRL16E: 3 instances
+
+Synth Design complete | Checksum: 1d73d90
+INFO: [Common 17-83] Releasing license: Synthesis
+248 Infos, 313 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:29 ; elapsed = 00:05:44 . Memory (MB): peak = 4808.637 ; gain = 3838.219
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 4808.637 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/system_wrapper.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 4808.637 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 01:41:32 2026...

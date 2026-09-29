@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_rst_pl0_0/sim/system_rst_pl0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_rst_pl0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/sim/bd_73a6_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_73a6_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/sim/bd_0182_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_0182_psr_aclk_0'

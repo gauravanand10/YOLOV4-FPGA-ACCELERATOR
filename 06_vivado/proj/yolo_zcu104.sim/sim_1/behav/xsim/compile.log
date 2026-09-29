@@ -1,0 +1,105 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/yolo_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/axil_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axil_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/burst_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module burst_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/conv_engine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/epilogue.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module epilogue
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/line_loader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module line_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/pe_array.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/sdp_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdp_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/sync_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/weight_loader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module weight_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/writer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/04_rtl/yolo_accel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_accel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/04_rtl/yolo_accel_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_accel_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_zynq_ps_0/sim/system_zynq_ps_0_vip_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_zynq_ps_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_yolo_accel_0/sim/system_yolo_accel_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_yolo_accel_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_0/sim/bd_73a6_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_2/sim/bd_73a6_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_3/sim/bd_73a6_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_4/sim/bd_73a6_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_5/sim/bd_73a6_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_6/sim/bd_73a6_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_7/sim/bd_73a6_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_8/sim/bd_73a6_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_9/sim/bd_73a6_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_10/sim/bd_73a6_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_11/sim/bd_73a6_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_12/sim/bd_73a6_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/sim/bd_73a6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_73a6
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1MM1RYS
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_C36SR3
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_1ATB024
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_1GFXR86
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/sim/system_sc_ctrl_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_sc_ctrl_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_0/sim/bd_0182_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_2/sim/bd_0182_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_3/sim/bd_0182_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_4/sim/bd_0182_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_5/sim/bd_0182_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_6/sim/bd_0182_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_7/sim/bd_0182_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_8/sim/bd_0182_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_9/sim/bd_0182_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_10/sim/bd_0182_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_11/sim/bd_0182_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_12/sim/bd_0182_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/sim/bd_0182.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0182
+INFO: [VRFC 10-311] analyzing module clk_map_imp_9ADCLJ
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1OFXE58
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_P8Y0V3
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_LZUAX1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/sim/system_sc_mem_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_sc_mem_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/sim/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.gen/sources_1/bd/system/hdl/system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_rst_pl0_0/sim/system_rst_pl0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_rst_pl0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/sim/bd_73a6_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_73a6_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/sim/bd_0182_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_0182_psr_aclk_0'

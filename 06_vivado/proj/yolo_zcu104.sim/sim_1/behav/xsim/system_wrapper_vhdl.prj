@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_rst_pl0_0/sim/system_rst_pl0_0.vhd" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_ctrl_0/bd_0/ip/ip_1/sim/bd_73a6_psr_aclk_0.vhd" \
+"../../../../yolo_zcu104.ip_user_files/bd/system/ip/system_sc_mem_0/bd_0/ip/ip_1/sim/bd_0182_psr_aclk_0.vhd" \
+
+# Do not sort compile order
+nosort
