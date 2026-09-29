@@ -1,0 +1,94 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe tb_top glbl -L unisims_ver -s tb_gate -timescale 1ns/1ps -debug off --log ..\..\..\logs\gatesim_xelab.log 
+Multi-threading is on. Using 10 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'm_axi_awuser' remains unconnected for this instance [D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY8
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.RAMB36E2(CLOCK_DOMAINS="COMMON",...
+Compiling module work.sdp_ram__parameterized0
+Compiling module work.sdp_ram__parameterized0_1
+Compiling module work.sdp_ram__parameterized0_2
+Compiling module work.sdp_ram__parameterized0_3
+Compiling module work.sdp_ram__parameterized0_4
+Compiling module work.sdp_ram__parameterized0_5
+Compiling module work.sdp_ram__parameterized0_6
+Compiling module work.sdp_ram__parameterized0_7
+Compiling module work.sdp_ram__parameterized0_8
+Compiling module work.sdp_ram__parameterized0_9
+Compiling module work.sdp_ram__parameterized0_10
+Compiling module work.sdp_ram__parameterized0_11
+Compiling module work.sdp_ram__parameterized0_12
+Compiling module work.sdp_ram__parameterized0_13
+Compiling module work.sdp_ram__parameterized0_14
+Compiling module work.sdp_ram__parameterized0_15
+Compiling module work.sdp_ram__parameterized0_16
+Compiling module work.sdp_ram__parameterized0_17
+Compiling module work.sdp_ram__parameterized0_18
+Compiling module work.sdp_ram__parameterized0_19
+Compiling module work.sdp_ram__parameterized0_20
+Compiling module work.sdp_ram__parameterized0_21
+Compiling module work.sdp_ram__parameterized0_22
+Compiling module work.sdp_ram__parameterized0_23
+Compiling module work.sdp_ram__parameterized0_24
+Compiling module work.sdp_ram__parameterized0_25
+Compiling module work.sdp_ram__parameterized0_26
+Compiling module work.sdp_ram__parameterized0_27
+Compiling module work.sdp_ram__parameterized0_28
+Compiling module work.sdp_ram__parameterized0_29
+Compiling module work.sdp_ram__parameterized0_30
+Compiling module work.sdp_ram__parameterized0_31
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.DSP48E2(ALUMODEREG=0,CARRYINREG=...
+Compiling module work.epilogue
+Compiling module unisims_ver.RAMB36E2(CASCADE_ORDER_B="FIRST"...
+Compiling module unisims_ver.RAMB36E2(CASCADE_ORDER_B="MIDDLE...
+Compiling module unisims_ver.RAMB36E2(CASCADE_ORDER_B="LAST",...
+Compiling module unisims_ver.RAMB36E2(CASCADE_ORDER_B="FIRST"...
+Compiling module unisims_ver.RAMB36E2(CASCADE_ORDER_B="MIDDLE...
+Compiling module unisims_ver.RAMB36E2(CASCADE_ORDER_B="LAST",...
+Compiling module unisims_ver.RAMB18E2(CLOCK_DOMAINS="COMMON",...
+Compiling module work.sdp_ram__parameterized1
+Compiling module unisims_ver.RAM32M16
+Compiling module unisims_ver.RAM32M
+Compiling module work.sync_fifo
+Compiling module work.pe_array
+Compiling module work.conv_engine
+Compiling module unisims_ver.RAM32X1S
+Compiling module work.burst_gen_0
+Compiling module unisims_ver.RAMB36E2(DOA_REG=0,DOB_REG=0,REA...
+Compiling module work.sdp_ram
+Compiling module work.line_loader
+Compiling module work.axil_regs
+Compiling module work.burst_gen
+Compiling module work.weight_loader
+Compiling module work.writer
+Compiling module work.yolo_accel
+Compiling module work.yolo_accel_wrap
+Compiling module work.axi_mem_model
+Compiling module work.tb_top
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv" Line 95. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv" Line 96. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv" Line 97. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv" Line 98. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+Compiling module work.glbl
+Built simulation snapshot tb_gate

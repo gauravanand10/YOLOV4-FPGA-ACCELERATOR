@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Sep 27 23:37:34 2026
+# Process ID: 32452
+# Current directory: D:/MPSOC_YOLO/05_tb/sim
+# Command line: xsim.exe -log ..\..\logs\xsim_feature.log -mode tcl -source {xsim.dir/tb_snap/xsim_script.tcl}
+# Log file: D:/MPSOC_YOLO/05_tb/sim/../../logs/xsim_feature.log
+# Journal file: D:/MPSOC_YOLO/05_tb/sim\xsim.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :15547 MB
+# Total Virtual     :32350 MB
+# Available Virtual :1645 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_snap/xsim_script.tcl
+# xsim {tb_snap} -testplusarg DATA=../data/feature -testplusarg STALL=20 -testplusarg LAT=1 -testplusarg RUNS=1 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+TB: data=../data/feature base=70000000 desc=70000000 layers=11 words=28928 lat=1 stall=20% runs=1
+  [27278000 ns] layer 0 done in 5424 cycles
+  [53308000 ns] layer 1 done in 5206 cycles
+  [75708000 ns] layer 2 done in 4480 cycles
+  [137228000 ns] layer 3 done in 12304 cycles
+  [144693000 ns] layer 4 done in 1493 cycles
+  [151678000 ns] layer 5 done in 1397 cycles
+  [165353000 ns] layer 6 done in 2735 cycles
+  [247708000 ns] layer 7 done in 16471 cycles
+  [269218000 ns] layer 8 done in 4302 cycles
+  [281293000 ns] layer 9 done in 2415 cycles
+RUN 0: status=00000002 cycles=61456 (0.31 ms @200MHz, 3254.4 fps) stall_rows=6039 stall_out=119 wload=22624
+AXI: rd_bursts=1071 rd_beats=31576 wr_bursts=2679 wr_beats=5358 protocol_errors=0
+*** TEST PASSED: ../data/feature (28928 words bit-exact) ***
+$finish called at time : 307602500 ps : File "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 156
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 209.586 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 23:37:43 2026...

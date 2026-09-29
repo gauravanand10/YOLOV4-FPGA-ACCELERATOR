@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Sep 27 23:37:52 2026
+# Process ID: 12504
+# Current directory: D:/MPSOC_YOLO/05_tb/sim
+# Command line: xsim.exe -log ..\..\logs\xsim_feature_neg.log -mode tcl -source {xsim.dir/tb_snap/xsim_script.tcl}
+# Log file: D:/MPSOC_YOLO/05_tb/sim/../../logs/xsim_feature_neg.log
+# Journal file: D:/MPSOC_YOLO/05_tb/sim\xsim.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :15547 MB
+# Total Virtual     :32350 MB
+# Available Virtual :1635 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_snap/xsim_script.tcl
+# xsim {tb_snap} -testplusarg DATA=../data/feature_neg -testplusarg STALL=0 -testplusarg LAT=40 -testplusarg RUNS=1 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+TB: data=../data/feature_neg base=70000000 desc=70000000 layers=11 words=28928 lat=40 stall=0% runs=1
+  [27168000 ns] layer 0 done in 5402 cycles
+  [53183000 ns] layer 1 done in 5203 cycles
+  [72413000 ns] layer 2 done in 3846 cycles
+  [129313000 ns] layer 3 done in 11380 cycles
+  [135958000 ns] layer 4 done in 1329 cycles
+  [142263000 ns] layer 5 done in 1261 cycles
+  [155293000 ns] layer 6 done in 2606 cycles
+  [225553000 ns] layer 7 done in 14052 cycles
+  [244473000 ns] layer 8 done in 3784 cycles
+  [256198000 ns] layer 9 done in 2345 cycles
+RUN 0: status=00000002 cycles=56409 (0.28 ms @200MHz, 3545.5 fps) stall_rows=4688 stall_out=66 wload=18624
+MISMATCH word 14854 (byte off 0003a060): got cee1c2b6ce12e149bde5af035343e2a3 exp cee1c0b6ce12e149bde5af035343e2a3
+AXI: rd_bursts=1071 rd_beats=31576 wr_bursts=2679 wr_beats=5358 protocol_errors=0
+*** TEST FAILED: ../data/feature_neg (1 mismatching words, 0 protocol errors) ***
+$finish called at time : 282372500 ps : File "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 156
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 210.137 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 23:38:01 2026...

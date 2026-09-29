@@ -1,0 +1,53 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/05_tb/gatesim/yolo_accel_wrap_funcsim.v" into library work
+INFO: [VRFC 10-311] analyzing module axil_regs
+INFO: [VRFC 10-311] analyzing module burst_gen
+INFO: [VRFC 10-311] analyzing module burst_gen_0
+INFO: [VRFC 10-311] analyzing module conv_engine
+INFO: [VRFC 10-311] analyzing module epilogue
+INFO: [VRFC 10-311] analyzing module line_loader
+INFO: [VRFC 10-311] analyzing module pe_array
+INFO: [VRFC 10-311] analyzing module sdp_ram
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_1
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_10
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_11
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_12
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_13
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_14
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_15
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_16
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_17
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_18
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_19
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_2
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_20
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_21
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_22
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_23
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_24
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_25
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_26
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_27
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_28
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_29
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_3
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_30
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_31
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_4
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_5
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_6
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_7
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_8
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized0_9
+INFO: [VRFC 10-311] analyzing module sdp_ram__parameterized1
+INFO: [VRFC 10-311] analyzing module sync_fifo
+INFO: [VRFC 10-311] analyzing module weight_loader
+INFO: [VRFC 10-311] analyzing module writer
+INFO: [VRFC 10-311] analyzing module yolo_accel
+INFO: [VRFC 10-311] analyzing module yolo_accel_wrap
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/05_tb/axi_mem_model.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_mem_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2024.1/data/verilog/src/glbl.v" into library work

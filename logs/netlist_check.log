@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 02:34:35 2026
+# Process ID: 8968
+# Current directory: D:/MPSOC_YOLO/05_tb/gatesim
+# Command line: vivado.exe -mode batch -notrace -source netlist_check.tcl -log D:\MPSOC_YOLO\logs\netlist_check.log -journal D:\MPSOC_YOLO\logs\netlist_check.jou
+# Log file: D:/MPSOC_YOLO/logs/netlist_check.log
+# Journal file: D:\MPSOC_YOLO\logs\netlist_check.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :5883 MB
+#-----------------------------------------------------------
+source netlist_check.tcl -notrace
+Command: open_checkpoint D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 328.930 ; gain = 4.336
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.868 . Memory (MB): peak = 1817.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 2059.074 ; gain = 27.832
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 2586.102 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2586.102 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2671.242 ; gain = 85.141
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.242 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3223.980 ; gain = 552.738
+Read Physdb Files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3223.980 ; gain = 637.879
+Restored from archive | CPU: 13.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3223.980 ; gain = 637.879
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3223.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 217 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 32 instances
+  DSP48E2 => DSP48E2 (inverted pins: OPMODE[5], OPMODE[4], RSTA, RSTB, RSTC) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (inverted pins: RSTA, RSTB, RSTC) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (inverted pins: RSTB) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 51 instances
+  RAM32X1S => RAM32X1S (RAMS32): 128 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+open_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 3223.980 ; gain = 2907.102
+CELL u_eng/u_pe: LUT=31104 FF=11136 CARRY8=1504 DSP=0 RAMB=0
+CELL u_eng/u_ep: LUT=11777 FF=3169 CARRY8=416 DSP=288 RAMB=0
+CELL u_eng: LUT=69980 FF=18956 CARRY8=6049 DSP=297 RAMB=93
+CELL u_ll: LUT=1134 FF=496 CARRY8=51 DSP=18 RAMB=4
+CELL u_wl: LUT=231 FF=308 CARRY8=10 DSP=0 RAMB=0
+CELL u_wr: LUT=745 FF=521 CARRY8=48 DSP=18 RAMB=0
+CELL u_regs: LUT=299 FF=126 CARRY8=4 DSP=0 RAMB=0
+Command: open_checkpoint D:/MPSOC_YOLO/06_vivado/proj/yolo_zcu104.runs/synth_1/system_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3223.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.911 . Memory (MB): peak = 3223.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 3223.980 ; gain = 0.000
+INFO: [Project 1-1714] 32 XPM XDC files have been applied to the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3223.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 217 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 37 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 51 instances
+  RAM32X1S => RAM32X1S (RAMS32): 128 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+open_checkpoint: Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 3223.980 ; gain = 0.000
+PORTS: 947
+NETLIST CHECK DONE
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 02:36:17 2026...

@@ -1,0 +1,81 @@
+[build.bat] runs attempt 1
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Sep 28 02:14:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source build.tcl -notrace
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 775.297 ; gain = 463.031
+INFO: reusing completed synth_1
+INFO: reusing completed impl_1 (bitstream present)
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.812 . Memory (MB): peak = 2046.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.217 . Memory (MB): peak = 2284.660 ; gain = 28.559
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 2819.816 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2819.816 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2898.871 ; gain = 79.055
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2898.871 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3450.379 ; gain = 551.508
+Read Physdb Files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 3450.379 ; gain = 630.562
+Restored from archive | CPU: 12.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 3450.379 ; gain = 630.562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3450.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 217 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 32 instances
+  DSP48E2 => DSP48E2 (inverted pins: OPMODE[5], OPMODE[4], RSTA, RSTB, RSTC) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (inverted pins: RSTA, RSTB, RSTC) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (inverted pins: RSTB) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 51 instances
+  RAM32X1S => RAM32X1S (RAMS32): 128 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 3450.379 ; gain = 2675.082
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_timing_summary: Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4090.660 ; gain = 640.281
+Command: report_power -file D:/MPSOC_YOLO/06_vivado/reports/power.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 4398.164 ; gain = 307.504
+Command: report_drc -file D:/MPSOC_YOLO/06_vivado/reports/drc.rpt
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/MPSOC_YOLO/06_vivado/reports/drc.rpt.
+report_drc completed successfully
+TIMING: WNS=0.099 ns WHS=0.010 ns
+INFO: [Project 1-1918] Creating Hardware Platform: D:/MPSOC_YOLO/06_vivado/out/yolo_zcu104.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/MPSOC_YOLO/06_vivado/out/yolo_zcu104.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 3 seconds
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 4673.691 ; gain = 128.535
+BUILD DONE
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 02:16:07 2026...
+VIVADO BUILD OK
+PL0_MHz 187.500000
+WNS_ns 0.099
+WHS_ns 0.010

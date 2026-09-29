@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Sep 27 23:38:09 2026
+# Process ID: 15392
+# Current directory: D:/MPSOC_YOLO/05_tb/sim
+# Command line: xsim.exe -log ..\..\logs\xsim_yolo.log -mode tcl -source {xsim.dir/tb_snap/xsim_script.tcl}
+# Log file: D:/MPSOC_YOLO/05_tb/sim/../../logs/xsim_yolo.log
+# Journal file: D:/MPSOC_YOLO/05_tb/sim\xsim.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :15547 MB
+# Total Virtual     :32350 MB
+# Available Virtual :1682 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_snap/xsim_script.tcl
+# xsim {tb_snap} -testplusarg DATA=../data/yolo -testplusarg STALL=0 -testplusarg LAT=40 -testplusarg RUNS=1 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+TB: data=../data/yolo base=70000000 desc=70000000 layers=21 words=948224 lat=40 stall=0% runs=1
+  [1953638000 ns] layer 0 done in 390696 cycles
+  [3916303000 ns] layer 1 done in 392533 cycles
+  [7831598000 ns] layer 2 done in 783059 cycles
+  [8811728000 ns] layer 3 done in 196026 cycles
+  [9791863000 ns] layer 4 done in 196027 cycles
+  [10231658000 ns] layer 5 done in 87959 cycles
+  [14241163000 ns] layer 6 done in 801901 cycles
+  [15231983000 ns] layer 7 done in 198164 cycles
+  [16222793000 ns] layer 8 done in 198162 cycles
+  [16671958000 ns] layer 9 done in 89833 cycles
+  [20889048000 ns] layer 10 done in 843418 cycles
+  [21919993000 ns] layer 11 done in 206189 cycles
+  [22950933000 ns] layer 12 done in 206188 cycles
+  [23426703000 ns] layer 13 done in 95154 cycles
+  [28335473000 ns] layer 14 done in 981754 cycles
+  [28615278000 ns] layer 15 done in 55961 cycles
+  [30975598000 ns] layer 16 done in 472064 cycles
+  [31045758000 ns] layer 17 done in 14032 cycles
+  [31117523000 ns] layer 18 done in 14353 cycles
+  [37290473000 ns] layer 19 done in 1234590 cycles
+RUN 0: status=00000002 cycles=7481892 (37.41 ms @200MHz, 26.7 fps) stall_rows=136188 stall_out=0 wload=376860
+AXI: rd_bursts=76116 rd_beats=2492436 wr_bursts=200434 wr_beats=400868 protocol_errors=0
+*** TEST PASSED: ../data/yolo (948224 words bit-exact) ***
+$finish called at time : 37409782500 ps : File "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 156
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:16:26 . Memory (MB): peak = 210.102 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 162344 KB (Peak: 162344 KB), Simulation CPU Usage: 963125 ms
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 23:54:37 2026...

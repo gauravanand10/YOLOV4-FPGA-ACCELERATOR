@@ -1,0 +1,1015 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 02:37:47 2026
+# Process ID: 14908
+# Current directory: D:/MPSOC_YOLO/05_tb/gatesim
+# Command line: vivado.exe -mode batch -notrace -source ooc_synth.tcl -log D:\MPSOC_YOLO\logs\gatesim_ooc_synth.log -journal D:\MPSOC_YOLO\logs\gatesim_ooc_synth.jou
+# Log file: D:/MPSOC_YOLO/logs/gatesim_ooc_synth.log
+# Journal file: D:\MPSOC_YOLO\logs\gatesim_ooc_synth.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :5871 MB
+#-----------------------------------------------------------
+source ooc_synth.tcl -notrace
+read_verilog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 520.172 ; gain = 204.730
+Command: synth_design -top yolo_accel_wrap -part xczu7ev-ffvc1156-2-e -mode out_of_context -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20600
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 979.020 ; gain = 455.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'yolo_accel_wrap' [D:/MPSOC_YOLO/04_rtl/yolo_accel_wrap.v:4]
+INFO: [Synth 8-6157] synthesizing module 'yolo_accel' [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'axil_regs' [D:/MPSOC_YOLO/04_rtl/axil_regs.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'axil_regs' (0#1) [D:/MPSOC_YOLO/04_rtl/axil_regs.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'weight_loader' [D:/MPSOC_YOLO/04_rtl/weight_loader.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'burst_gen' [D:/MPSOC_YOLO/04_rtl/burst_gen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'burst_gen' (0#1) [D:/MPSOC_YOLO/04_rtl/burst_gen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'weight_loader' (0#1) [D:/MPSOC_YOLO/04_rtl/weight_loader.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'line_loader' [D:/MPSOC_YOLO/04_rtl/line_loader.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'sdp_ram' [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+	Parameter W bound to: 32'sb00000000000000000000000010000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000001010 
+	Parameter LAT bound to: 32'sb00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'sdp_ram' (0#1) [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'line_loader' (0#1) [D:/MPSOC_YOLO/04_rtl/line_loader.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'conv_engine' [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'sdp_ram__parameterized0' [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+	Parameter W bound to: 32'sb00000000000000000000000010000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000001001 
+	Parameter LAT bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'sdp_ram__parameterized0' (0#1) [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sdp_ram__parameterized1' [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+	Parameter W bound to: 32'sb00000000000000000000000010000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000001101 
+	Parameter LAT bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'sdp_ram__parameterized1' (0#1) [D:/MPSOC_YOLO/04_rtl/sdp_ram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pe_array' [D:/MPSOC_YOLO/04_rtl/pe_array.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'pe_array' (0#1) [D:/MPSOC_YOLO/04_rtl/pe_array.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'epilogue' [D:/MPSOC_YOLO/04_rtl/epilogue.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'epilogue' (0#1) [D:/MPSOC_YOLO/04_rtl/epilogue.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo' [D:/MPSOC_YOLO/04_rtl/sync_fifo.sv:2]
+	Parameter W bound to: 32'sb00000000000000000000000100000000 
+	Parameter LG bound to: 32'sb00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo' (0#1) [D:/MPSOC_YOLO/04_rtl/sync_fifo.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'conv_engine' (0#1) [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'writer' [D:/MPSOC_YOLO/04_rtl/writer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'writer' (0#1) [D:/MPSOC_YOLO/04_rtl/writer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_accel' (0#1) [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_accel_wrap' (0#1) [D:/MPSOC_YOLO/04_rtl/yolo_accel_wrap.v:4]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_v_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:161]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_inb_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:164]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_last_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:163]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_first_reg' and it is trimmed from '3' to '2' bits. [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element dsc_reg[in_h] was removed.  [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:117]
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awuser[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_aruser[0] driven by constant 0
+WARNING: [Synth 8-7129] Port prm[0][127] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][126] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][125] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][124] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][123] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][122] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][121] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][120] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][119] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][118] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][117] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][116] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][115] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][114] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][113] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][112] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][111] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][110] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][109] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][108] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][107] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][106] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][105] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][104] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][103] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][102] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][95] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][94] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][93] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][92] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][91] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][90] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][89] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][88] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][87] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][86] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][85] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][84] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][83] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][82] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][81] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][63] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][62] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][61] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][60] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][59] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][58] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][57] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][56] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][55] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][54] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][53] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][52] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][51] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][50] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[0][49] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][127] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][126] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][125] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][124] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][123] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][122] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][121] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][120] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][119] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][118] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][117] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][116] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][115] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][114] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][113] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][112] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][111] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][110] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][109] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][108] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][107] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][106] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][105] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][104] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][103] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][102] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][95] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][94] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][93] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][92] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][91] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][90] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][89] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][88] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][87] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][86] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][85] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][84] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][83] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][82] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][81] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][63] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][62] in module epilogue is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prm[1][61] in module epilogue is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1170.254 ; gain = 647.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1170.254 ; gain = 647.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1170.254 ; gain = 647.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "line_loader:/hreg_reg" of size (depth=32 x width=128) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2184.145 ; gain = 1660.949
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 32    
+	   2 Input   32 Bit       Adders := 15    
+	   3 Input   32 Bit       Adders := 1     
+	   3 Input   24 Bit       Adders := 2     
+	   2 Input   22 Bit       Adders := 1     
+	   4 Input   20 Bit       Adders := 32    
+	   2 Input   18 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 18    
+	   4 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 33    
+	   4 Input    5 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 103   
+	               46 Bit    Registers := 32    
+	               32 Bit    Registers := 56    
+	               27 Bit    Registers := 32    
+	               24 Bit    Registers := 2     
+	               20 Bit    Registers := 32    
+	               18 Bit    Registers := 168   
+	               16 Bit    Registers := 22    
+	               13 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 38    
+	                6 Bit    Registers := 97    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 44    
++---RAMs : 
+	            1024K Bit	(8192 X 128 bit)          RAMs := 1     
+	             128K Bit	(1024 X 128 bit)          RAMs := 1     
+	              64K Bit	(512 X 128 bit)          RAMs := 32    
+	               4K Bit	(32 X 128 bit)          RAMs := 1     
++---Muxes : 
+	  11 Input  512 Bit        Muxes := 1     
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 20    
+	   3 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 5     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 39    
+	   2 Input   17 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	  11 Input   16 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 34    
+	  11 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 107   
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 5     
+	  11 Input    1 Bit        Muxes := 15    
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP g_lane[4].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[4].r3_reg is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: register g_lane[4].r3_reg is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: register g_lane[4].p2_reg is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: operator g_lane[4].r30 is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: operator g_lane[4].p20 is absorbed into DSP g_lane[4].r3_reg.
+DSP Report: Generating DSP g_lane[14].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[14].r3_reg is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: register g_lane[14].r3_reg is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: register g_lane[14].p2_reg is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: operator g_lane[14].r30 is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: operator g_lane[14].p20 is absorbed into DSP g_lane[14].r3_reg.
+DSP Report: Generating DSP g_lane[15].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[15].r3_reg is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: register g_lane[15].r3_reg is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: register g_lane[15].p2_reg is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: operator g_lane[15].r30 is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: operator g_lane[15].p20 is absorbed into DSP g_lane[15].r3_reg.
+DSP Report: Generating DSP g_lane[16].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[16].r3_reg is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: register g_lane[16].r3_reg is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: register g_lane[16].p2_reg is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: operator g_lane[16].r30 is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: operator g_lane[16].p20 is absorbed into DSP g_lane[16].r3_reg.
+DSP Report: Generating DSP g_lane[17].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[17].r3_reg is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: register g_lane[17].r3_reg is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: register g_lane[17].p2_reg is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: operator g_lane[17].r30 is absorbed into DSP g_lane[17].r3_reg.
+DSP Report: operator g_lane[17].p20 is absorbed into DSP g_lane[17].r3_reg.
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awid[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awsize[2] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awsize[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awburst[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awburst[0] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awlock driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awcache[3] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awcache[2] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awcache[1] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awcache[0] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awqos[3] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awqos[2] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awqos[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awqos[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_awuser[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[15] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[14] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[13] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[12] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[11] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[10] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[9] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[8] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[7] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[6] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[5] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[4] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_wstrb[0] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_bready driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arid[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arsize[2] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arsize[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arburst[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arburst[0] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arlock driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arcache[3] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arcache[2] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arcache[1] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arcache[0] driven by constant 1
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arqos[3] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arqos[2] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arqos[1] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_arqos[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_aruser[0] driven by constant 0
+WARNING: [Synth 8-3917] design yolo_accel_wrap has port m_axi_rready driven by constant 1
+DSP Report: Generating DSP g_lane[0].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[0].r3_reg is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: register g_lane[0].r3_reg is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: register g_lane[0].p2_reg is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: operator g_lane[0].r30 is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: operator g_lane[0].p20 is absorbed into DSP g_lane[0].r3_reg.
+DSP Report: Generating DSP g_lane[5].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[5].r3_reg is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: register g_lane[5].r3_reg is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: register g_lane[5].p2_reg is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: operator g_lane[5].r30 is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: operator g_lane[5].p20 is absorbed into DSP g_lane[5].r3_reg.
+DSP Report: Generating DSP g_lane[6].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[6].r3_reg is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: register g_lane[6].r3_reg is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: register g_lane[6].p2_reg is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: operator g_lane[6].r30 is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: operator g_lane[6].p20 is absorbed into DSP g_lane[6].r3_reg.
+DSP Report: Generating DSP g_lane[7].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[7].r3_reg is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: register g_lane[7].r3_reg is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: register g_lane[7].p2_reg is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: operator g_lane[7].r30 is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: operator g_lane[7].p20 is absorbed into DSP g_lane[7].r3_reg.
+DSP Report: Generating DSP g_lane[8].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[8].r3_reg is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: register g_lane[8].r3_reg is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: register g_lane[8].p2_reg is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: operator g_lane[8].r30 is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: operator g_lane[8].p20 is absorbed into DSP g_lane[8].r3_reg.
+DSP Report: Generating DSP g_lane[10].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[10].r3_reg is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: register g_lane[10].r3_reg is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: register g_lane[10].p2_reg is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: operator g_lane[10].r30 is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: operator g_lane[10].p20 is absorbed into DSP g_lane[10].r3_reg.
+DSP Report: Generating DSP g_lane[11].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[11].r3_reg is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: register g_lane[11].r3_reg is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: register g_lane[11].p2_reg is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: operator g_lane[11].r30 is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: operator g_lane[11].p20 is absorbed into DSP g_lane[11].r3_reg.
+DSP Report: Generating DSP g_lane[12].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[12].r3_reg is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: register g_lane[12].r3_reg is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: register g_lane[12].p2_reg is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: operator g_lane[12].r30 is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: operator g_lane[12].p20 is absorbed into DSP g_lane[12].r3_reg.
+DSP Report: Generating DSP g_lane[21].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[21].r3_reg is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: register g_lane[21].r3_reg is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: register g_lane[21].p2_reg is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: operator g_lane[21].r30 is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: operator g_lane[21].p20 is absorbed into DSP g_lane[21].r3_reg.
+DSP Report: Generating DSP g_lane[28].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[28].r3_reg is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: register g_lane[28].r3_reg is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: register g_lane[28].p2_reg is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: operator g_lane[28].r30 is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: operator g_lane[28].p20 is absorbed into DSP g_lane[28].r3_reg.
+DSP Report: Generating DSP g_lane[29].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[29].r3_reg is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: register g_lane[29].r3_reg is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: register g_lane[29].p2_reg is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: operator g_lane[29].r30 is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: operator g_lane[29].p20 is absorbed into DSP g_lane[29].r3_reg.
+DSP Report: Generating DSP g_lane[30].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[30].r3_reg is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: register g_lane[30].r3_reg is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: register g_lane[30].p2_reg is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: operator g_lane[30].r30 is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: operator g_lane[30].p20 is absorbed into DSP g_lane[30].r3_reg.
+DSP Report: Generating DSP g_lane[1].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[1].r3_reg is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: register g_lane[1].r3_reg is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: register g_lane[1].p2_reg is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: operator g_lane[1].r30 is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: operator g_lane[1].p20 is absorbed into DSP g_lane[1].r3_reg.
+DSP Report: Generating DSP g_lane[3].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[3].r3_reg is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: register g_lane[3].r3_reg is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: register g_lane[3].p2_reg is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: operator g_lane[3].r30 is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: operator g_lane[3].p20 is absorbed into DSP g_lane[3].r3_reg.
+DSP Report: Generating DSP g_lane[2].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[2].r3_reg is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: register g_lane[2].r3_reg is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: register g_lane[2].p2_reg is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: operator g_lane[2].r30 is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: operator g_lane[2].p20 is absorbed into DSP g_lane[2].r3_reg.
+DSP Report: Generating DSP g_lane[9].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[9].r3_reg is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: register g_lane[9].r3_reg is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: register g_lane[9].p2_reg is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: operator g_lane[9].r30 is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: operator g_lane[9].p20 is absorbed into DSP g_lane[9].r3_reg.
+DSP Report: Generating DSP g_lane[13].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[13].r3_reg is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: register g_lane[13].r3_reg is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: register g_lane[13].p2_reg is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: operator g_lane[13].r30 is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: operator g_lane[13].p20 is absorbed into DSP g_lane[13].r3_reg.
+DSP Report: Generating DSP g_lane[18].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[18].r3_reg is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: register g_lane[18].r3_reg is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: register g_lane[18].p2_reg is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: operator g_lane[18].r30 is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: operator g_lane[18].p20 is absorbed into DSP g_lane[18].r3_reg.
+DSP Report: Generating DSP g_lane[19].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[19].r3_reg is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: register g_lane[19].r3_reg is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: register g_lane[19].p2_reg is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: operator g_lane[19].r30 is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: operator g_lane[19].p20 is absorbed into DSP g_lane[19].r3_reg.
+DSP Report: Generating DSP g_lane[20].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[20].r3_reg is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: register g_lane[20].r3_reg is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: register g_lane[20].p2_reg is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: operator g_lane[20].r30 is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: operator g_lane[20].p20 is absorbed into DSP g_lane[20].r3_reg.
+DSP Report: Generating DSP g_lane[22].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[22].r3_reg is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: register g_lane[22].r3_reg is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: register g_lane[22].p2_reg is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: operator g_lane[22].r30 is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: operator g_lane[22].p20 is absorbed into DSP g_lane[22].r3_reg.
+DSP Report: Generating DSP g_lane[23].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[23].r3_reg is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: register g_lane[23].r3_reg is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: register g_lane[23].p2_reg is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: operator g_lane[23].r30 is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: operator g_lane[23].p20 is absorbed into DSP g_lane[23].r3_reg.
+DSP Report: Generating DSP g_lane[24].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[24].r3_reg is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: register g_lane[24].r3_reg is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: register g_lane[24].p2_reg is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: operator g_lane[24].r30 is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: operator g_lane[24].p20 is absorbed into DSP g_lane[24].r3_reg.
+DSP Report: Generating DSP g_lane[25].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[25].r3_reg is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: register g_lane[25].r3_reg is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: register g_lane[25].p2_reg is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: operator g_lane[25].r30 is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: operator g_lane[25].p20 is absorbed into DSP g_lane[25].r3_reg.
+DSP Report: Generating DSP g_lane[26].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[26].r3_reg is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: register g_lane[26].r3_reg is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: register g_lane[26].p2_reg is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: operator g_lane[26].r30 is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: operator g_lane[26].p20 is absorbed into DSP g_lane[26].r3_reg.
+DSP Report: Generating DSP g_lane[27].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[27].r3_reg is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: register g_lane[27].r3_reg is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: register g_lane[27].p2_reg is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: operator g_lane[27].r30 is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: operator g_lane[27].p20 is absorbed into DSP g_lane[27].r3_reg.
+DSP Report: Generating DSP g_lane[31].r3_reg, operation Mode is: (C+(A*B2)')'.
+DSP Report: register g_lane[31].r3_reg is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: register g_lane[31].r3_reg is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: register g_lane[31].p2_reg is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: operator g_lane[31].r30 is absorbed into DSP g_lane[31].r3_reg.
+DSP Report: operator g_lane[31].p20 is absorbed into DSP g_lane[31].r3_reg.
+INFO: [Synth 8-4471] merging register 's0_ix_reg[17:0]' into 's0_ix_reg[17:0]' [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:91]
+INFO: [Synth 8-4471] merging register 's0_ix_reg[17:0]' into 's0_ix_reg[17:0]' [D:/MPSOC_YOLO/04_rtl/conv_engine.sv:91]
+DSP Report: Generating DSP s1_lba0, operation Mode is: C'+A2*B.
+DSP Report: register s0_ix_reg is absorbed into DSP s1_lba0.
+DSP Report: register s0_c_reg is absorbed into DSP s1_lba0.
+DSP Report: operator s1_lba0 is absorbed into DSP s1_lba0.
+DSP Report: operator s0_xoff is absorbed into DSP s1_lba0.
+INFO: [Synth 8-6904] The RAM "u_ll/hreg_reg" of size (depth=32 x width=128) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+DSP Report: Generating DSP row_addr0, operation Mode is: C+(A*B)'.
+DSP Report: register row_bytes_reg is absorbed into DSP row_addr0.
+DSP Report: operator row_bytes0 is absorbed into DSP row_addr0.
+DSP Report: operator row_addr0 is absorbed into DSP row_addr0.
+DSP Report: Generating DSP row_beats_reg, operation Mode is: (0 or C)+((A*B)' or 0).
+DSP Report: register row_beats_reg is absorbed into DSP row_beats_reg.
+DSP Report: operator row_beats0 is absorbed into DSP row_beats_reg.
+DSP Report: Generating DSP rowb0_reg, operation Mode is: (A*B)'.
+DSP Report: register rowb0_reg is absorbed into DSP rowb0_reg.
+DSP Report: operator rowb00 is absorbed into DSP rowb0_reg.
+DSP Report: Generating DSP rowb1_reg, operation Mode is: (A*B)'.
+DSP Report: register rowb1_reg is absorbed into DSP rowb1_reg.
+DSP Report: operator rowb10 is absorbed into DSP rowb1_reg.
+INFO: [Synth 8-4471] merging register 'dbeat_reg[1:0]' into 'dbeat_reg[1:0]' [D:/MPSOC_YOLO/04_rtl/yolo_accel.sv:115]
+INFO: [Synth 8-6904] The RAM "u_ll/hreg_reg" of size (depth=32 x width=128) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:36 . Memory (MB): peak = 2219.094 ; gain = 1695.898
+---------------------------------------------------------------------------------
+ Sort Area is epilogue__GB0 g_lane[0].r3_reg_0 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[10].r3_reg_6 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[11].r3_reg_7 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[12].r3_reg_8 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[13].r3_reg_3 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[14].r3_reg_2 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[15].r3_reg_3 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[16].r3_reg_4 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[17].r3_reg_5 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[18].r3_reg_4 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[19].r3_reg_5 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[1].r3_reg_d : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[20].r3_reg_6 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[21].r3_reg_9 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[22].r3_reg_7 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[23].r3_reg_8 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[24].r3_reg_9 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[25].r3_reg_a : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[26].r3_reg_b : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[27].r3_reg_c : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[28].r3_reg_a : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[29].r3_reg_b : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[2].r3_reg_0 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[30].r3_reg_c : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[31].r3_reg_d : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[3].r3_reg_e : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB1 g_lane[4].r3_reg_0 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[5].r3_reg_2 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[6].r3_reg_3 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[7].r3_reg_4 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB0 g_lane[8].r3_reg_5 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is epilogue__GB2 g_lane[9].r3_reg_2 : 0 0 : 3684 3684 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 rowb0_reg_4 : 0 0 : 2075 2075 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 rowb1_reg_6 : 0 0 : 2075 2075 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 row_addr0_0 : 0 0 : 2073 2073 : Used 1 time 0
+ Sort Area is yolo_accel__GC0 row_beats_reg_2 : 0 0 : 926 926 : Used 1 time 0
+ Sort Area is conv_engine__GCB0 s1_lba0_0 : 0 0 : 615 615 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name       | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|conv_engine__GCB0 | g_wb[0].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[1].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[2].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[3].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[4].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[5].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[6].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[7].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[8].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[9].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[10].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[11].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[12].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[13].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[14].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[15].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[16].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[17].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[18].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[19].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[20].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[21].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[22].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[23].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[24].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[25].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[26].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[27].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[28].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[29].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[30].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[31].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|u_lb              | mem_reg               | 8 K x 128(READ_FIRST)  | W |   | 8 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 28     | 8,8,8,4,1       | 
+|u_ll              | u_prb/mem_reg         | 1 K x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 1,1,1,1         | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------+--------------+----------------+----------------------+-----------------+
+|Module Name       | RTL Object   | Inference      | Size (Depth x Width) | Primitives      | 
++------------------+--------------+----------------+----------------------+-----------------+
+|conv_engine__GCB0 | u_of/mem_reg | User Attribute | 16 x 256             | RAM32M16 x 19   | 
+|u_ll              | hreg_reg     | Implied        | 32 x 128             | RAM32X1S x 128  | 
++------------------+--------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|yolo_accel_wrap | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B2)')'           | 27     | 18     | 46     | -      | 46     | 0    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_engine     | C'+A2*B                | 10     | 8      | 8      | -      | 10     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
+|line_loader     | C+(A*B)'               | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|line_loader     | (0 or C)+((A*B)' or 0) | 16     | 8      | 8      | -      | 24     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|writer          | (A*B)'                 | 17     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|writer          | (A*B)'                 | 17     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++----------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:40 . Memory (MB): peak = 2238.320 ; gain = 1715.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name       | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|conv_engine__GCB0 | g_wb[0].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[1].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[2].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[3].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[4].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[5].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[6].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[7].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[8].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[9].u_wb/mem_reg  | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[10].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[11].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[12].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[13].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[14].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[15].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[16].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[17].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[18].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[19].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[20].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[21].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[22].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[23].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[24].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[25].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[26].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[27].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[28].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[29].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[30].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|conv_engine__GCB0 | g_wb[31].u_wb/mem_reg | 512 x 128(READ_FIRST)  | W |   | 512 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
+|u_lb              | mem_reg               | 8 K x 128(READ_FIRST)  | W |   | 8 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 28     | 8,8,8,4,1       | 
+|u_ll              | u_prb/mem_reg         | 1 K x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 1,1,1,1         | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------------+--------------+----------------+----------------------+-----------------+
+|Module Name       | RTL Object   | Inference      | Size (Depth x Width) | Primitives      | 
++------------------+--------------+----------------+----------------------+-----------------+
+|conv_engine__GCB0 | u_of/mem_reg | User Attribute | 16 x 256             | RAM32M16 x 19   | 
+|u_ll              | hreg_reg     | Implied        | 32 x 128             | RAM32X1S x 128  | 
++------------------+--------------+----------------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_corei_5/u_ll/u_prb/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_corei_5/u_ll/u_prb/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_corei_5/u_ll/u_prb/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_corei_5/u_ll/u_prb/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:54 . Memory (MB): peak = 2250.582 ; gain = 1727.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_core/u_ll/u_prb/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_ll/u_prb/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_ll/u_prb/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_ll/u_prb/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:02:06 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:02:06 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:02:11 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:42 ; elapsed = 00:02:14 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:02:15 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:02:15 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|yolo_accel_wrap | u_core/u_eng/u_ep/v_reg[4]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_accel_wrap | u_core/u_eng/q_v_reg[2]     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_accel_wrap | u_core/u_eng/q_last_reg[2]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_accel_wrap | u_core/u_eng/q_first_reg[2] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_accel_wrap | u_core/u_eng/p_inb_reg[1]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv_engine     | (C'+A'*B'')'  | 10     | 8      | 8      | -      | 10     | 1    | 2    | 2    | -    | -     | 0    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB0   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|yolo_accel_wrap | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|epilogue__GB2   | (C+(A*B')')'  | 30     | 17     | 48     | -      | 46     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|line_loader     | C'+(A''*B'')' | 16     | 16     | 32     | -      | 32     | 2    | 2    | 2    | -    | -     | 1    | 0    | 
+|line_loader     | Dynamic       | -      | -      | -      | -      | 24     | -    | -    | -    | -    | -     | 1    | 0    | 
+|writer          | (A*B'')'      | 17     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|writer          | (A*B'')'      | 17     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
++----------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |  6182|
+|2     |DSP48E2         |    32|
+|3     |DSP_ALU         |     5|
+|4     |DSP_A_B_DATA    |     5|
+|5     |DSP_C_DATA      |     5|
+|6     |DSP_MULTIPLIER  |     5|
+|7     |DSP_M_DATA      |     5|
+|8     |DSP_OUTPUT      |     5|
+|9     |DSP_PREADD      |     5|
+|10    |DSP_PREADD_DATA |     5|
+|11    |LUT1            |   535|
+|12    |LUT2            | 26967|
+|13    |LUT3            |  7382|
+|14    |LUT4            | 14013|
+|15    |LUT5            |  5133|
+|16    |LUT6            | 18662|
+|17    |RAM32M          |     1|
+|18    |RAM32M16        |    18|
+|19    |RAM32X1S        |   128|
+|20    |RAMB18E2        |     1|
+|21    |RAMB36E2        |    96|
+|22    |SRL16E          |     5|
+|23    |FDRE            | 20156|
+|24    |FDSE            |  1115|
++------+----------------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------------------+-------+
+|      |Instance              |Module                         |Cells  |
++------+----------------------+-------------------------------+-------+
+|1     |top                   |                               | 100466|
+|2     |  u_core              |yolo_accel                     | 100466|
+|3     |    u_eng             |conv_engine                    |  95129|
+|4     |      s1_lba0         |\u_core/u_eng/s1_lba0_funnel   |      8|
+|5     |      \g_wb[0].u_wb   |sdp_ram__parameterized0        |   1090|
+|6     |      \g_wb[10].u_wb  |sdp_ram__parameterized0_1      |   1090|
+|7     |      \g_wb[11].u_wb  |sdp_ram__parameterized0_2      |   1090|
+|8     |      \g_wb[12].u_wb  |sdp_ram__parameterized0_3      |   1090|
+|9     |      \g_wb[13].u_wb  |sdp_ram__parameterized0_4      |   1090|
+|10    |      \g_wb[14].u_wb  |sdp_ram__parameterized0_5      |   1090|
+|11    |      \g_wb[15].u_wb  |sdp_ram__parameterized0_6      |   1090|
+|12    |      \g_wb[16].u_wb  |sdp_ram__parameterized0_7      |   1090|
+|13    |      \g_wb[17].u_wb  |sdp_ram__parameterized0_8      |   1090|
+|14    |      \g_wb[18].u_wb  |sdp_ram__parameterized0_9      |   1090|
+|15    |      \g_wb[19].u_wb  |sdp_ram__parameterized0_10     |   1090|
+|16    |      \g_wb[1].u_wb   |sdp_ram__parameterized0_11     |   1090|
+|17    |      \g_wb[20].u_wb  |sdp_ram__parameterized0_12     |   1090|
+|18    |      \g_wb[21].u_wb  |sdp_ram__parameterized0_13     |   1090|
+|19    |      \g_wb[22].u_wb  |sdp_ram__parameterized0_14     |   1090|
+|20    |      \g_wb[23].u_wb  |sdp_ram__parameterized0_15     |   1090|
+|21    |      \g_wb[24].u_wb  |sdp_ram__parameterized0_16     |   1090|
+|22    |      \g_wb[25].u_wb  |sdp_ram__parameterized0_17     |   1090|
+|23    |      \g_wb[26].u_wb  |sdp_ram__parameterized0_18     |   1090|
+|24    |      \g_wb[27].u_wb  |sdp_ram__parameterized0_19     |   1090|
+|25    |      \g_wb[28].u_wb  |sdp_ram__parameterized0_20     |   1090|
+|26    |      \g_wb[29].u_wb  |sdp_ram__parameterized0_21     |   1090|
+|27    |      \g_wb[2].u_wb   |sdp_ram__parameterized0_22     |   1090|
+|28    |      \g_wb[30].u_wb  |sdp_ram__parameterized0_23     |   1090|
+|29    |      \g_wb[31].u_wb  |sdp_ram__parameterized0_24     |   1090|
+|30    |      \g_wb[3].u_wb   |sdp_ram__parameterized0_25     |   1090|
+|31    |      \g_wb[4].u_wb   |sdp_ram__parameterized0_26     |   1090|
+|32    |      \g_wb[5].u_wb   |sdp_ram__parameterized0_27     |   1090|
+|33    |      \g_wb[6].u_wb   |sdp_ram__parameterized0_28     |   1090|
+|34    |      \g_wb[7].u_wb   |sdp_ram__parameterized0_29     |   1090|
+|35    |      \g_wb[8].u_wb   |sdp_ram__parameterized0_30     |   1090|
+|36    |      \g_wb[9].u_wb   |sdp_ram__parameterized0_31     |   1090|
+|37    |      u_ep            |epilogue                       |  15395|
+|38    |      u_lb            |sdp_ram__parameterized1        |  14451|
+|39    |      u_of            |sync_fifo                      |     60|
+|40    |      u_pe            |pe_array                       |  25312|
+|41    |    u_ll              |line_loader                    |   1828|
+|42    |      row_addr0       |\u_ll/row_beats_reg_funnel__1  |      8|
+|43    |      row_beats_reg   |\u_ll/row_beats_reg_funnel     |      8|
+|44    |      u_bg            |burst_gen_0                    |    240|
+|45    |      u_prb           |sdp_ram                        |    549|
+|46    |    u_regs            |axil_regs                      |    433|
+|47    |    u_wl              |weight_loader                  |    579|
+|48    |      u_bg            |burst_gen                      |    199|
+|49    |    u_wr              |writer                         |   1347|
+|50    |      rowb0_reg       |\u_wr/rowb1_reg_funnel__1      |      8|
+|51    |      rowb1_reg       |\u_wr/rowb1_reg_funnel         |      8|
++------+----------------------+-------------------------------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:15 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1881 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:16 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:02:16 . Memory (MB): peak = 2287.656 ; gain = 1764.461
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.907 . Memory (MB): peak = 2300.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6366 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2450.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 184 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 37 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 18 instances
+  RAM32X1S => RAM32X1S (RAMS32): 128 instances
+
+Synth Design complete | Checksum: 6492aa0a
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:46 . Memory (MB): peak = 2450.543 ; gain = 1930.371
+OOC SYNTH DONE
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 02:40:48 2026...

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 02:44:01 2026
+# Process ID: 1712
+# Current directory: D:/MPSOC_YOLO/05_tb/gatesim/sim
+# Command line: xsim.exe -log ..\..\..\logs\gatesim_feature.log -mode tcl -source {xsim.dir/tb_gate/xsim_script.tcl}
+# Log file: D:/MPSOC_YOLO/05_tb/gatesim/sim/../../../logs/gatesim_feature.log
+# Journal file: D:/MPSOC_YOLO/05_tb/gatesim/sim\xsim.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :6269 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_gate/xsim_script.tcl
+# xsim {tb_gate} -testplusarg DATA=../../data/feature -testplusarg STALL=0 -testplusarg LAT=40 -testplusarg RUNS=1 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+TB: data=../../data/feature base=70000000 desc=70000000 layers=11 words=28928 lat=40 stall=0% runs=1
+RUN 0: status=00000002 cycles=56405 (0.28 ms @200MHz, 3545.8 fps) stall_rows=4688 stall_out=66 wload=18624
+AXI: rd_bursts=1071 rd_beats=31576 wr_bursts=2679 wr_beats=5358 protocol_errors=0
+*** TEST PASSED: ../../data/feature (28928 words bit-exact) ***
+$finish called at time : 282557500 ps : File "D:/MPSOC_YOLO/05_tb/gatesim/tb_top_gate.sv" Line 148
+run: Time (s): cpu = 00:00:01 ; elapsed = 01:25:04 . Memory (MB): peak = 283.887 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 1022200 KB (Peak: 1022200 KB), Simulation CPU Usage: 5069515 ms
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 04:09:08 2026...

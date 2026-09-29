@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 01:33:30 2026
+# Process ID: 10672
+# Current directory: D:/MPSOC_YOLO/06_vivado
+# Command line: vivado.exe -mode batch -notrace -source build.tcl -log D:\MPSOC_YOLO\logs\vivado_prep.log -journal D:\MPSOC_YOLO\logs\vivado_prep.jou -tclargs prep
+# Log file: D:/MPSOC_YOLO/logs/vivado_prep.log
+# Journal file: D:\MPSOC_YOLO\logs\vivado_prep.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :14067 MB
+#-----------------------------------------------------------
+source build.tcl -notrace

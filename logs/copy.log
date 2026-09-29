@@ -1,0 +1,199 @@
+START 27-09-2026 23:05:35.46 
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 27 September 2026 23:05:35
+   Source = E:\yolo_mpsoc\models\
+     Dest : D:\MPSOC_YOLO\00_model\cfg\
+
+    Files : *.cfg
+	    obj.data
+	    
+  Options : /DCOPY:DA /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   4	E:\yolo_mpsoc\models\
+	    New File  		     158	obj.data
+	    New File  		    3300	yolov4-tiny-7class-train.cfg
+	    New File  		    3304	yolov4-tiny-7class.cfg
+	    New File  		    3525	yolov4_tiny_7class.cfg
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         4         4         0         0         0         0
+   Bytes :    10.0 k    10.0 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           20,57,400 Bytes/sec.
+   Speed :             117.725 MegaBytes/min.
+   Ended : 27 September 2026 23:05:35
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 27 September 2026 23:05:35
+   Source = E:\yolo_mpsoc\weights\
+     Dest : D:\MPSOC_YOLO\00_model\weights\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   4	E:\yolo_mpsoc\weights\
+	    New File  		  22.4 m	yolov4-tiny-7class-train_10000.weights
+	    New File  		  22.4 m	yolov4-tiny-7class-train_final.weights
+	    New File  		  22.4 m	yolov4-tiny-7class-train_last.weights
+	    New File  		  18.8 m	yolov4-tiny.conv.29
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         4         4         0         0         0         0
+   Bytes :   86.32 m   86.32 m         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           17,24,19,017 Bytes/sec.
+   Speed :              9,865.896 MegaBytes/min.
+   Ended : 27 September 2026 23:05:36
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 27 September 2026 23:05:36
+   Source = E:\yolo_mpsoc\YOLO_predictions_10\
+     Dest : D:\MPSOC_YOLO\00_model\darknet_predictions\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                  10	E:\yolo_mpsoc\YOLO_predictions_10\
+	    New File  		   56604	prediction_01.jpg
+	    New File  		   66522	prediction_02.jpg
+	    New File  		  111859	prediction_03.jpg
+	    New File  		   48381	prediction_04.jpg
+	    New File  		  112715	prediction_05.jpg
+	    New File  		   61073	prediction_06.jpg
+	    New File  		   58060	prediction_07.jpg
+	    New File  		   82493	prediction_08.jpg
+	    New File  		   90613	prediction_09.jpg
+	    New File  		   54206	prediction_10.jpg
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :        10        10         0         0         0         0
+   Bytes :   725.1 k   725.1 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           4,36,78,000 Bytes/sec.
+   Speed :             2,499.275 MegaBytes/min.
+   Ended : 27 September 2026 23:05:36
+
+        1 file(s) copied.
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 27 September 2026 23:05:36
+   Source = E:\yolo_mpsoc\scripts\
+     Dest : D:\MPSOC_YOLO\01_dataset\scripts\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   5	E:\yolo_mpsoc\scripts\
+	    New File  		    6110	download_convert_coco.py
+	    New File  		     675	prepare_coco_7class.py
+	    New File  		    1461	save_10_predictions.ps1
+	    New File  		    2703	select_balanced_coco.py
+	    New File  		    1245	select_coco_7class.py
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         5         5         0         0         0         0
+   Bytes :    11.9 k    11.9 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           17,42,000 Bytes/sec.
+   Speed :              99.678 MegaBytes/min.
+   Ended : 27 September 2026 23:05:36
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 27 September 2026 23:05:36
+   Source = E:\yolo_mpsoc\dataset\
+     Dest : D:\MPSOC_YOLO\01_dataset\
+
+    Files : *.*
+	    
+  Options : *.* /NDL /NFL /S /E /DCOPY:DA /COPY:DAT /NP /MT:16 /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 27 September 2026 23:06:56
+   Source = E:\yolo_mpsoc\darknet\build\Release\
+     Dest : D:\MPSOC_YOLO\tools\darknet_win\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   7	E:\yolo_mpsoc\darknet\build\Release\
+	    New File  		   3.1 m	darknet.dll
+	    New File  		   3.0 m	darknet.exe
+	    New File  		   12885	darknet.exp
+	    New File  		   21802	darknet.lib
+	    New File  		   23040	kmeansiou.exe
+	    New File  		   82944	pthreadVC2.dll
+	    New File  		  126464	uselib.exe
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         7         7         0         0         0         0
+   Bytes :    6.47 m    6.47 m         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           25,12,73,444 Bytes/sec.
+   Speed :             14,377.981 MegaBytes/min.
+   Ended : 27 September 2026 23:06:56
+
+        1 file(s) copied.
+DONE 27-09-2026 23:06:56.80 

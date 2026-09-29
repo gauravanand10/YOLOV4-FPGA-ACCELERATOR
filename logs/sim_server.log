@@ -1,0 +1,17 @@
+sim_server on port 5055
+client ('127.0.0.1', 61886)
+client gone [WinError 10054] An existing connection was forcibly closed by the remote host
+client ('127.0.0.1', 62448)
+Traceback (most recent call last):
+  File "D:\MPSOC_YOLO\07_sw\host\sim_server.py", line 54, in <module>
+    main()
+    ~~~~^^
+  File "D:\MPSOC_YOLO\07_sw\host\sim_server.py", line 43, in main
+    _, heads = int8_forward(net, q, input_q(rgb))
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MPSOC_YOLO\02_golden_model\quant.py", line 135, in int8_forward
+    acc = int_conv(x, p['wq'], p['stride'], p['pad'])
+  File "D:\MPSOC_YOLO\02_golden_model\quant.py", line 46, in int_conv
+    x = torch.from_numpy(xq.astype(np.float64))[None]
+                         ~~~~~~~~~^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 3.96 MiB for an array with shape (3, 416, 416) and data type float64

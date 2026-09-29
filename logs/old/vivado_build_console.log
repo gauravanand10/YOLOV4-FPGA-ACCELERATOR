@@ -1,0 +1,27 @@
+﻿
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Sep 28 00:47:24 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source build.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 914.328 ; gain = 599.332
+INFO: board part xilinx.com:zcu104:part0:1.1
+Wrote  : <D:\MPSOC_YOLO\06_vivado\proj\yolo_zcu104.srcs\sources_1\bd\system\system.bd> 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_200_0'. Failed to customize IP instance 'system_clk_wiz_200_0'. Failed to load customization data
+cmd : DeleteInterpProc called with active evals
+At line:1 char:619
++ ... lyContinue; cmd /c "D:\MPSOC_YOLO\06_vivado\build.bat" *> D:\MPSOC_YO ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (DeleteInterpPro...th active evals:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Abnormal program termination (EXCEPTION_BREAKPOINT)
+Please check 'D:/MPSOC_YOLO/06_vivado/hs_err_pid31132.log' for details
+VIVADO BUILD OK

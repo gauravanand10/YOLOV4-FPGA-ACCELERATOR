@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 28 01:23:48 2026
+# Process ID: 3956
+# Current directory: D:/MPSOC_YOLO/06_vivado
+# Command line: vivado.exe -mode batch -notrace -source build.tcl -log D:\MPSOC_YOLO\logs\vivado_build.log -journal D:\MPSOC_YOLO\logs\vivado_build.jou
+# Log file: D:/MPSOC_YOLO/logs/vivado_build.log
+# Journal file: D:\MPSOC_YOLO\logs\vivado_build.jou
+# Running On        :Gaurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16802 MB
+# Swap memory       :8952 MB
+# Total Virtual     :25755 MB
+# Available Virtual :14169 MB
+#-----------------------------------------------------------
+source build.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 910.953 ; gain = 598.012
+INFO: board part xilinx.com:zcu104:part0:1.1
+couldn't read file "C:/Xilinx/Vivado/2024.1/data/rsb/busdef/interrupt_signal/busdef.tcl": no such file or directory
+ERROR: [BD 41-69] Error sourcing TCL script: couldn't read file "C:/Xilinx/Vivado/2024.1/data/rsb/busdef/interrupt_signal/busdef.tcl": no such file or directory
+    while executing
+"source -notrace {C:/Xilinx/Vivado/2024.1/data/rsb/busdef/interrupt_signal/busdef.tcl} "
+    (in namespace eval "::xilinx.com_signal_interrupt_1.0" script line 1)
+    invoked from within
+"namespace eval ::xilinx.com_signal_interrupt_1.0 { source -notrace {C:/Xilinx/Vivado/2024.1/data/rsb/busdef/interrupt_signal/busdef.tcl} }"
+couldn't read file "utils_dbg.tcl": no such file or directory
+ERROR: [BD 41-68] Error sourcing TCL file: couldn't read file "utils_dbg.tcl": no such file or directory
+    while executing
+"source -notrace utils_dbg.tcl"
+    (file "C:/Xilinx/Vivado/2024.1/scripts/ipintegrator/init.tcl" line 12)
+    invoked from within
+"source -notrace C:/Xilinx/Vivado/2024.1/scripts/ipintegrator/init.tcl"
+invalid command name "bd::utils::dbg"
+ERROR: [BD 41-1273] Error running init TCL procedure: invalid command name "bd::utils::dbg"
+    ::xilinx.com_bd_rule_board::init Line 3
+invalid command name "bd::utils::dbg"
+ERROR: [BD 41-1273] Error running init TCL procedure: invalid command name "bd::utils::dbg"
+    ::xilinx.com_bd_rule_gt_tx_rx::init Line 3
+invalid command name "bd::utils::dbg"
+ERROR: [BD 41-1273] Error running init TCL procedure: invalid command name "bd::utils::dbg"
+    ::xilinx.com_bd_rule_rf_converter_usp::init Line 10
+invalid command name "bd::utils::dbg"
+ERROR: [BD 41-69] Error sourcing TCL script: invalid command name "bd::utils::dbg"
+    while executing
+"bd::utils::dbg $msg"
+    (procedure "xroe_dbg_msg" line 2)
+    invoked from within
+"xroe_dbg_msg "loadMyAutomationLibAtStartup : Checking if the object has an repo present to enable block automation""
+    (procedure "loadMyAutomationLibAtStartup" line 2)
+    invoked from within
+"loadMyAutomationLibAtStartup"
+    (file "C:/Xilinx/Vivado/2024.1/data/rsb/rules/roe_framer/bd.tcl" line 139)
+    invoked from within
+"source -notrace {C:/Xilinx/Vivado/2024.1/data/rsb/rules/roe_framer/bd.tcl} "
+    (in namespace eval "::xilinx.com_bd_rule_roe_framer" script line 1)
+    invoked from within
+"namespace eval ::xilinx.com_bd_rule_roe_framer { source -notrace {C:/Xilinx/Vivado/2024.1/data/rsb/rules/roe_framer/bd.tcl} }"
+invalid command name "bd::utils::dbg"
+ERROR: [BD 41-1273] Error running init TCL procedure: invalid command name "bd::utils::dbg"
+    ::xilinx.com_bd_rule_xdma::init Line 3
+invalid command name "bd::utils::dbg"
+ERROR: [Ip 78-90] Error in initialization of Rule object 'xilinx.com:bd_rule:gt_tx_rx:1.0'
+invalid command name "bd::utils::dbg"
+ERROR: [Ip 78-90] Error in initialization of Rule object 'xilinx.com:bd_rule:pcie4_uscale_plus:1.0'
+invalid command name "bd::utils::dbg"
+ERROR: [Ip 78-90] Error in initialization of Rule object 'xilinx.com:bd_rule:pcie4c_uscale_plus:1.0'
+invalid command name "bd::utils::dbg"
+ERROR: [Ip 78-90] Error in initialization of Rule object 'xilinx.com:bd_rule:qdma:1.0'
+invalid command name "bd::utils::dbg"
+ERROR: [Ip 78-90] Error in initialization of Rule object 'xilinx.com:bd_rule:xdma:1.0'
+Wrote  : <D:\MPSOC_YOLO\06_vivado\proj\yolo_zcu104.srcs\sources_1\bd\system\system.bd> 
+create_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 936.176 ; gain = 18.578
+ERROR: [Common 17-39] 'create_bd_design' failed due to earlier errors.
+
+    while executing
+"create_bd_design system"
+    (file "build.tcl" line 37)
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 01:24:29 2026...

@@ -1,0 +1,34 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe tb_top -s tb_snap -timescale 1ns/1ps -O3 -debug off --log ..\..\logs\xelab.log 
+Multi-threading is on. Using 10 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'm_axi_awuser' remains unconnected for this instance [D:/MPSOC_YOLO/05_tb/tb_top.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.yolo_pkg
+Compiling module work.axil_regs
+Compiling module work.burst_gen
+Compiling module work.weight_loader
+Compiling module work.sdp_ram(LAT=1)
+Compiling module work.line_loader
+Compiling module work.sdp_ram(LG=13)
+Compiling module work.sdp_ram(LG=9)
+Compiling module work.pe_array
+Compiling module work.epilogue
+Compiling module work.sync_fifo
+Compiling module work.conv_engine_default
+Compiling module work.writer
+Compiling module work.yolo_accel
+Compiling module work.yolo_accel_wrap
+Compiling module work.axi_mem_model
+Compiling module work.tb_top
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 104. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 105. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 106. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+WARNING: [XSIM 43-3373] "D:/MPSOC_YOLO/05_tb/tb_top.sv" Line 107. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+Built simulation snapshot tb_snap
