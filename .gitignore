@@ -1,0 +1,4 @@
+01_dataset/downloads/annotations_trainval2017.zip
+01_dataset/downloads/annotations/instances_train2017.json
+01_dataset/downloads/annotations/person_keypoints_train2017.json
+01_dataset/downloads/annotations/captions_train2017.json
