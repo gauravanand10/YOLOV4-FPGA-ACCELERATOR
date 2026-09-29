@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_gate/xsimk.exe -runall -simmode gui -testplusarg DATA=../../data/feature -testplusarg STALL=0 -testplusarg LAT=40 -testplusarg RUNS=1 -wdb tb_gate.wdb -simrunnum 0 -socket 62253
+Design successfully loaded
+Design Loading Memory Usage: 563332 KB (Peak: 563332 KB)
+Design Loading CPU Usage: 1124 ms
+Simulation completed
+Simulation Memory Usage: 1022200 KB (Peak: 1022200 KB)
+Simulation CPU Usage: 5069515 ms

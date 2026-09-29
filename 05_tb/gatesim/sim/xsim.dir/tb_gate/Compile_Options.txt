@@ -1,0 +1,1 @@
+"tb_top" "glbl" -L "unisims_ver" -s "tb_gate" -timescale "1ns/1ps" -debug "off" --log "..\..\..\logs\gatesim_xelab.log" 

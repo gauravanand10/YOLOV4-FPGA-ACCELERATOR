@@ -1,0 +1,78 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Sep 28 02:40:44 2026
+| Host         : Gaurav running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file D:/MPSOC_YOLO/05_tb/gatesim/ooc_utilization_hier.rpt
+| Design       : yolo_accel_wrap
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+|       Instance      |           Module           | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | URAM | DSP Blocks |
++---------------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+| yolo_accel_wrap     |                      (top) |      53745 |      53464 |     276 |    5 | 21271 |     96 |      1 |    0 |         37 |
+|   (yolo_accel_wrap) |                      (top) |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|   u_core            |                 yolo_accel |      53745 |      53464 |     276 |    5 | 21271 |     96 |      1 |    0 |         37 |
+|     (u_core)        |                 yolo_accel |        172 |        172 |       0 |    0 |   872 |      0 |      0 |    0 |          0 |
+|     u_eng           |                conv_engine |      51588 |      51435 |     148 |    5 | 18948 |     92 |      1 |    0 |         33 |
+|       (u_eng)       |                conv_engine |        279 |        275 |       0 |    4 |  4630 |      0 |      0 |    0 |          1 |
+|       g_wb[0].u_wb  |    sdp_ram__parameterized0 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[10].u_wb |  sdp_ram__parameterized0_1 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[11].u_wb |  sdp_ram__parameterized0_2 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[12].u_wb |  sdp_ram__parameterized0_3 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[13].u_wb |  sdp_ram__parameterized0_4 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[14].u_wb |  sdp_ram__parameterized0_5 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[15].u_wb |  sdp_ram__parameterized0_6 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[16].u_wb |  sdp_ram__parameterized0_7 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[17].u_wb |  sdp_ram__parameterized0_8 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[18].u_wb |  sdp_ram__parameterized0_9 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[19].u_wb | sdp_ram__parameterized0_10 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[1].u_wb  | sdp_ram__parameterized0_11 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[20].u_wb | sdp_ram__parameterized0_12 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[21].u_wb | sdp_ram__parameterized0_13 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[22].u_wb | sdp_ram__parameterized0_14 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[23].u_wb | sdp_ram__parameterized0_15 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[24].u_wb | sdp_ram__parameterized0_16 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[25].u_wb | sdp_ram__parameterized0_17 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[26].u_wb | sdp_ram__parameterized0_18 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[27].u_wb | sdp_ram__parameterized0_19 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[28].u_wb | sdp_ram__parameterized0_20 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[29].u_wb | sdp_ram__parameterized0_21 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[2].u_wb  | sdp_ram__parameterized0_22 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[30].u_wb | sdp_ram__parameterized0_23 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[31].u_wb | sdp_ram__parameterized0_24 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[3].u_wb  | sdp_ram__parameterized0_25 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[4].u_wb  | sdp_ram__parameterized0_26 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[5].u_wb  | sdp_ram__parameterized0_27 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[6].u_wb  | sdp_ram__parameterized0_28 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[7].u_wb  | sdp_ram__parameterized0_29 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[8].u_wb  | sdp_ram__parameterized0_30 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       g_wb[9].u_wb  | sdp_ram__parameterized0_31 |        768 |        768 |       0 |    0 |     0 |      2 |      0 |    0 |          0 |
+|       u_ep          |                   epilogue |       9058 |       9057 |       0 |    1 |  3169 |      0 |      0 |    0 |         32 |
+|       u_lb          |    sdp_ram__parameterized1 |      10819 |      10819 |       0 |    0 |     0 |     28 |      1 |    0 |          0 |
+|       u_of          |                  sync_fifo |        168 |         20 |     148 |    0 |    13 |      0 |      0 |    0 |          0 |
+|       u_pe          |                   pe_array |      10272 |      10272 |       0 |    0 | 11136 |      0 |      0 |    0 |          0 |
+|     u_ll            |                line_loader |        981 |        853 |     128 |    0 |   496 |      4 |      0 |    0 |          2 |
+|       (u_ll)        |                line_loader |        503 |        375 |     128 |    0 |   440 |      0 |      0 |    0 |          2 |
+|       u_bg          |                burst_gen_0 |        157 |        157 |       0 |    0 |    56 |      0 |      0 |    0 |          0 |
+|       u_prb         |                    sdp_ram |        321 |        321 |       0 |    0 |     0 |      4 |      0 |    0 |          0 |
+|     u_regs          |                  axil_regs |        231 |        231 |       0 |    0 |   126 |      0 |      0 |    0 |          0 |
+|     u_wl            |              weight_loader |        232 |        232 |       0 |    0 |   308 |      0 |      0 |    0 |          0 |
+|       (u_wl)        |              weight_loader |        114 |        114 |       0 |    0 |   252 |      0 |      0 |    0 |          0 |
+|       u_bg          |                  burst_gen |        118 |        118 |       0 |    0 |    56 |      0 |      0 |    0 |          0 |
+|     u_wr            |                     writer |        549 |        549 |       0 |    0 |   521 |      0 |      0 |    0 |          2 |
++---------------------+----------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+
+

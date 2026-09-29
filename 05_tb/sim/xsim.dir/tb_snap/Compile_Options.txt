@@ -1,0 +1,1 @@
+"tb_top" -s "tb_snap" -timescale "1ns/1ps" -O3 -debug "off" --log "..\..\logs\xelab.log" 

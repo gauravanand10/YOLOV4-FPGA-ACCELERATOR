@@ -1,0 +1,15 @@
+../04_rtl/yolo_pkg.sv
+../04_rtl/sdp_ram.sv
+../04_rtl/sync_fifo.sv
+../04_rtl/burst_gen.sv
+../04_rtl/axil_regs.sv
+../04_rtl/weight_loader.sv
+../04_rtl/line_loader.sv
+../04_rtl/pe_array.sv
+../04_rtl/epilogue.sv
+../04_rtl/conv_engine.sv
+../04_rtl/writer.sv
+../04_rtl/yolo_accel.sv
+../04_rtl/yolo_accel_wrap.v
+axi_mem_model.sv
+tb_top.sv

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_snap/xsimk.exe -runall -simmode gui -testplusarg DATA=../data/feature -testplusarg STALL=30 -testplusarg LAT=3 -testplusarg RUNS=2 -wdb tb_snap.wdb -simrunnum 0 -socket 51770
+Design successfully loaded
+Design Loading Memory Usage: 12116 KB (Peak: 12116 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 18848 KB (Peak: 18848 KB)
+Simulation CPU Usage: 14530 ms
