@@ -1,0 +1,11 @@
+mAP@0.5 on valid[0:500] (500 images), calib pct=99.999
+class         float     int8
+person        54.98    54.20
+car           37.19    36.93
+bicycle       47.81    48.90
+bottle        28.28    26.62
+chair         27.78    27.93
+laptop        65.46    66.38
+cup           26.81    26.28
+mAP           41.19    41.03   (delta -0.16)
+head raw-output correlation float vs int8: mean 0.9968 min 0.9741
